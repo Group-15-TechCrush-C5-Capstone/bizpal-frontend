@@ -3,3 +3,86 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+body {
+    width: 100vw;
+    font-family: "Inter", sans-serif;
+}
+
+.nav-bar {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 1rem 3rem;
+    background-color: #1E3A5F;
+}
+
+.logo {
+    display: flex;
+    justify-self: flex-start;
+    align-items: center;
+    gap: 5px;
+}
+
+.logo h4 {
+    font-size: 2rem;
+    font-weight: 500;
+    color: #C89B3C;
+}
+
+.nav-links {
+    display: flex;
+    justify-self: center;
+    align-items: center;
+}
+
+.nav-links ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3.1rem;
+    list-style: none;
+}
+
+.nav-links ul li a {
+    text-decoration: none;
+    font-size: 1rem;
+    line-height: 100%;
+}
+
+#homepage {
+    color: #FFFFFF;
+}
+
+#other-pages {
+    color: #BFB7B7;
+    transition: .32s ease all;
+}
+
+#other-pages:hover {
+    color: #FFFFFF;
+}
+
+.nav-btn {
+    display: flex;
+    justify-self: flex-end;
+    align-items: center;
+    gap: 1rem;
+}
+
+#login-btn {
+    background-color: transparent;
+    color: #C89B3C;
+    font-size: 1rem;
+    padding: .8rem 2rem;
+    border: 1px solid #C89B3C;
+    border-radius: 5px;
+}
+
+#get-started-btn {
+    background-color: #C89B3C;
+    color: #FFFFFF;
+    font-size: 1rem;
+    padding: .8rem 2rem;
+    border-radius: 5px;
+    border: none;
+}
