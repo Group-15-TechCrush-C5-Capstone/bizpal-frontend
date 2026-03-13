@@ -11,7 +11,7 @@ body {
 .container {
   display: grid;
   grid-template-columns: 356px 1fr;
-  grid-template-rows: 124px 600px;
+  grid-template-rows: 110px 600px;
 }
 
 .side-container {
@@ -29,7 +29,7 @@ body {
   gap: 15px;
   background-color: #1e3a5f;
   width: 356px;
-  height: 124px;
+  height: 110px;
   color: white;
   padding-left: 25px;
 }
@@ -80,7 +80,7 @@ body {
   background-color: #112240;
   color: #BFB7B7;
   width: 356px;
-  height: 610px;
+  height: 620px;
   padding-left: 25px;
 }
 
@@ -276,3 +276,219 @@ font-size: 23px;
 .main{
     padding: 20px;
 }
+
+
+.Lead-container{
+display: flex;
+gap: 15px;
+justify-content: space-between;
+}
+
+.Lead-Dash{
+  background-color: #112240;
+  color: white;
+  padding: 20px;
+  justify-content: space-evenly;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  width:50%;
+  height: 130px;
+  position: relative;
+}
+
+
+.Lead-Dash h1 {
+font-weight: 700;
+font-style: Bold;
+font-size: 15px;
+}
+.Lead-Dash p{
+font-weight: 600;
+font-style: SemiBold;
+font-size: 13px;
+}
+
+
+.Lead-circle{
+  position: absolute;
+  right: 20px;
+  top: 30%;
+  transform: translateY(-50%);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 2px solid white;
+  background: transparent;
+}
+
+.Lead-Dash img {
+  width: 20px;
+  height: 20px;
+}
+
+.rate-section {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  
+}
+
+.rate-section {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.conversion {
+  color: black;
+  background-color: #C89B3C;
+}
+
+.total-customers {
+  background-color: #112240;
+}
+
+.active-leads {
+  background-color: #2A6070;
+}
+
+.deals-closed {
+  background-color: #1E3A5F;
+}
+.rate-section p {
+  font-size: 12px;
+}
+
+.customer {
+  color: black;
+}
+
+.Quick {
+font-weight: 800;
+font-style: ExtraBold;
+font-size: 15px;
+  margin-top: 15px;
+  color: #2A6070;
+}
+
+
+.q-container{
+display: flex;
+gap: 20px;
+justify-content: flex-start;
+margin-top: 10px;
+align-items: center;
+}
+
+.q-action1{
+  background-color: #112240;
+  color: white;
+  padding: 20px;
+ justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  width:210px;
+  height: 12px;
+}
+
+.q-action1 h1 {
+font-weight: 800;
+font-size: 15px;
+}
+
+.q-action2{
+  background-color: #2A6070;
+  color: white;
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  width:210px;
+  height: 12px;
+}
+
+.q-action2 h1 {
+font-weight: 800;
+font-size: 15px;
+}
+
+.q-action3{
+  background-color: #C89B3C;
+  padding: 20px;
+justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  width:210px;
+  height: 12px;
+}
+
+.q-action3 h1{
+  color: #000000;
+font-weight: 800;
+font-size: 15px;
+}
+
+
+.Lead-Header{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  gap: 5px;
+}
+
+.Lead-Info{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0px;
+ 
+}
+
+.funnel{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  width: 100%;
+  height: 120px;
+}
+
+.Lead-Info h1{
+  font-family: Inter;
+font-weight: 700;
+font-size: 32px;
+  margin-top: 10px;
+}
+
+.Lead-Info p{
+font-weight: 400;
+font-style: Regular;
+font-size: 24px;
+color: #BFB7B7;
+margin: 0;
+}
+
+.Lead-btn button{
+  background-color: #112240;
+  color: white;
+  padding: 15px 70px;
+  border: none;
+  border-radius: 25px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
