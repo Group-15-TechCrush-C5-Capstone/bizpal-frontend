@@ -5,13 +5,13 @@
 }
 
 body {
-    font-family: "Inter", sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 .container {
   display: grid;
   grid-template-columns: 356px 1fr;
-  grid-template-rows: 134px 600px;
+  grid-template-rows: 124px 600px;
 }
 
 .side-container {
@@ -29,7 +29,7 @@ body {
   gap: 15px;
   background-color: #1e3a5f;
   width: 356px;
-  height: 134px;
+  height: 124px;
   color: white;
   padding-left: 25px;
 }
@@ -80,10 +80,9 @@ body {
   background-color: #112240;
   color: #BFB7B7;
   width: 356px;
-  height: 600px;
+  height: 610px;
   padding-left: 25px;
 }
-
 
 .Nickname {
   background-color: #2a6070;
@@ -114,9 +113,9 @@ font-size: 23px;
 .nav-links {
   display: flex;
   flex-direction: column;
-  padding-top: 40px;
+  padding-top: 35px;
   list-style-type: none;
-  gap: 7px;
+  gap: 3px;
 }
 
 .nav-links li a {
@@ -180,7 +179,7 @@ font-size: 23px;
   width: 300px;
   height: 78px;
   border-radius: 10px;
-  margin-top: 3.5rem;
+  margin-top: 3rem;
   text-decoration: none; 
 }
 
