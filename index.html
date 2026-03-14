@@ -8,7 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="/css/style.css">
-    <script src="/js/script.js"></script>
+    <script src="/js/script.js" defer></script>
 </head>
 <body>
     <header class="nav-bar">
@@ -28,6 +28,11 @@
             <button id="login-btn">Log In</button>
             <button id="get-started-btn">Get Started Free</button>
         </div>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
     </header>
     <section class="hero-page">
         <div class="hero-top">
@@ -41,8 +46,8 @@
                     <p>BizPal helps small businesses organize <br> customer information, track leads, and stay on <br> top of follow-ups from one simple dashboard.</p>
                 </div>
                 <div class="hero-btn">
-                    <button id="login-btn">See how it works</button>
-                    <button id="get-started-btn">Get Started Free</button>
+                    <button class="login-btn">See how it works</button>
+                    <button class="get-started-btn">Get Started Free</button>
                 </div>
             </div>
             <div class="hero-right">
@@ -177,22 +182,22 @@
                 <p>Manage customers, track leads, and stay on top of follow-ups with tools designed for small businesses.</p>
             </div>
             <div class="business-bottom">
-                    <div id="box">
+                    <div id="box1">
                         <img src="assets/customer icon.svg" alt="">
                         <h4>Customer Manager</h4>
                         <p>Store and organize all your customer information in one central place, so you can easily access contact details, track interactions, and keep everything you need to manage your business at your fingertips.</p>
                     </div>
-                    <div id="box">
+                    <div id="box1">
                         <img src="assets/lead chart icon.svg" alt="">
                         <h4>Lead Pipeline</h4>
                         <p>Track potential customers and move them through each stage of your sales process, from new lead to contacted, negotiating, and ultimately a successful sale, so you always know where every opportunity stands.</p>
                     </div>
-                    <div id="box">
+                    <div id="box1">
                         <img src="assets/notes icon.svg" alt="">
                         <h4>Notes & Follow-up</h4>
                         <p>Record every important interaction with your customers, add detailed notes, and set reminders for follow-ups so you never miss an opportunity to connect and grow your business..</p>
                     </div>
-                    <div id="box">
+                    <div id="box1">
                         <img src="assets/dashboard chart icon.svg" alt="">
                         <h4>Business Dashboard</h4>
                         <p>Get a clear overview of all your customers, active leads, and upcoming follow-ups in one place, allowing you to monitor your business activity, track progress, and make informed decisions at a glance..</p>
