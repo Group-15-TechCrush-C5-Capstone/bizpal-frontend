@@ -1,123 +1,248 @@
 <!doctype html>
 <html lang="en">
-  <head>
-   <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BizPal</title>
-   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="/Layout/layout.css">
-    <script src="/js/script.js"></script>
-  </head>
 
-  <body>
-    <div class="container">
-      <div class="side-container">
-        <!-- Left Sidebar -->
-        <aside class="sidebar1">
-          <div class="nickname">
-            <div class="icon-wrapper">
-              <span class="initials">CE</span>
-            </div>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BizPal</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="/Layout/layout.css">
+  <script src="/js/script.js"></script>
+</head>
+
+<body>
+  <div class="container">
+    <div class="side-container">
+      <!-- Left Sidebar -->
+      <aside class="sidebar1">
+        <div class="nickname">
+          <div class="icon-wrapper">
+            <span class="initials">CE</span>
           </div>
-          <div class="shop-name">
-            <h1>Chidi's</h1>
-            <p>Electronics</p>
+        </div>
+        <div class="shop-name">
+          <h1>Chidi's</h1>
+          <p>Electronics</p>
+        </div>
+      </aside>
+
+      <!-- Left Sidebar -->
+      <aside class="sidebar2">
+        <nav>
+          <ul class="nav-links">
+            <li class="dashboard">
+              <a href="dashboard.html">
+                <img src="Layout icons/Dashboard.svg" alt="Dashboard icon" />
+                Dashboard
+              </a>
+            </li>
+            <li>
+              <a href="customers.html">
+                <img src="Layout icons/Customer.svg" alt="Customers icon" />
+                Customers
+              </a>
+            </li>
+            <li>
+              <a href="lead.html">
+                <img src="Layout icons/Lead.svg" alt="Lead Pipeline icon" />
+                Lead Pipeline
+              </a>
+            </li>
+            <li>
+              <a href="notes.html">
+                <img src="Layout icons/Notes.svg" alt="Notes icon" /> Notes
+              </a>
+            </li>
+            <li>
+              <a href="followups.html">
+                <img src="Layout icons/Follow-ups.svg" alt="Follow-ups icon" />
+                Follow-ups
+              </a>
+            </li>
+            <li class="report">
+              <a href="reports.html">REPORTS</a>
+            </li>
+            <li>
+              <a href="analytics.html">
+                <img src="Layout icons/carbon_analytics.svg" alt="Analytics icon" />
+                Analytics
+              </a>
+            </li>
+            <li>
+              <a href="settings.html">
+                <img src="Layout icons/Settings.svg" alt="Settings icon" />
+                Settings
+              </a>
+            </li>
+          </ul>
+        </nav>
+
+        <!-- profile picture upload control -->
+        <input type="file" id="profile-upload" accept="image/*" hidden />
+        <label for="profile-upload" class="profile-button">
+          <div class="profile-pic">
+            <img id="profile-img" src="Layout icons/Ellipse 13.svg" alt="Profile Picture" />
+            <span id="profile-initial" class="initial">C</span>
           </div>
-        </aside>
+          <div class="profile-info">
+            <h4>Chidi Okafor</h4>
+            <p>Admin</p>
+          </div>
+        </label>
+      </aside>
+    </div>
 
-        <!-- Left Sidebar -->
-        <aside class="sidebar2">
-          <nav>
-            <ul class="nav-links">
-              <li class="dashboard">
-                <a href="dashboard.html">
-                  <img src="Layout icons/Dashboard.svg" alt="Dashboard icon" />
-                  Dashboard
-                </a>
-              </li>
-              <li>
-                <a href="customers.html">
-                  <img src="Layout icons/Customer.svg" alt="Customers icon" />
-                  Customers
-                </a>
-              </li>
-              <li>
-                <a href="lead.html">
-                  <img src="Layout icons/Lead.svg" alt="Lead Pipeline icon" />
-                  Lead Pipeline
-                </a>
-              </li>
-              <li>
-                <a href="notes.html">
-                  <img src="Layout icons/Notes.svg" alt="Notes icon" /> Notes
-                </a>
-              </li>
-              <li>
-                <a href="followups.html">
-                  <img
-                    src="Layout icons/Follow-ups.svg"
-                    alt="Follow-ups icon"
-                  />
-                  Follow-ups
-                </a>
-              </li>
-              <li class="report">
-                <a href="reports.html">REPORTS</a>
-              </li>
-              <li>
-                <a href="analytics.html">
-                  <img
-                    src="Layout icons/carbon_analytics.svg"
-                    alt="Analytics icon"
-                  />
-                  Analytics
-                </a>
-              </li>
-              <li>
-                <a href="settings.html">
-                  <img src="Layout icons/Settings.svg" alt="Settings icon" />
-                  Settings
-                </a>
-              </li>
-            </ul>
-          </nav>
-
-          <!-- profile picture upload control -->
-          <input type="file" id="profile-upload" accept="image/*" hidden />
-          <label for="profile-upload" class="profile-button">
-            <div class="profile-pic">
-              <img id="profile-img" src="Layout icons/Ellipse 13.svg" alt="Profile Picture" />
-              <span id="profile-initial" class="initial">C</span>
-            </div>
-            <div class="profile-info">
-              <h4>Chidi Okafor</h4>
-              <p>Admin</p>
-            </div>
-          </label>
-        </aside>
+    <!-- Top Bar -->
+    <header class="topbar">
+      <div class="topbar-left">
+        <h1>Lead Pipeline</h1>
       </div>
 
-      <!-- Top Bar -->
-      <header class="topbar">
-        <div class="topbar-left">
-          <h1>Good morning, Chidi 👋</h1>
-          <p>Here’s what’s happening at your shop today</p>
+      <div class="topbar-right">
+
+        <div class="lead-group">
+          <p>+Add Lead</p>
         </div>
 
-        <div class="topbar-right">
-          <div class="date-box">
-            <img src="Layout icons/Calendar.svg" alt="Calendar Icon" />
-            <span id="current-date">Friday, Jun 13 2026</span>
-          </div>
+        <div class="export-group">
+          <img class="exportsvg" src="Layout icons/export.svg" alt="Filter Icon" />
+          <span>Export CSV</span>
         </div>
-      </header>
+      </div>
 
-      <!-- Main Content -->
-      <main class="main">
-        <h2>Lead Pipeline</h2>
-        <p>Your main content goes here...</p>
-      </main>
+    </header>
+    <!-- Main Content -->
+    <main class="main">
+      <div class="pipeline-header">
+
+        <div class="btn-grade">
+          <h4>Pipeline Grade</h4>
+          <div class="pipeline-grade-btn">A GRADE</div>
+        </div>
+
+        <div class="header-content">
+          <h4>34.</h4>
+          <p>Total Leads</p>
+        </div>
+
+        <div class="header-content">
+          <h4>19.</h4>
+          <p>Closed/Won</p>
+        </div>
+
+        <div class="header-content">
+          <h4>62%</h4>
+          <p>Win Rate</p>
+        </div>
+
+        <div class="header-content">
+          <h4 class="graded">4.8M</h4>
+          <p>Pipeline Value</p>
+        </div>
+      </div>
+
+
+
+      <div class="lead-statistics">
+
+  <div class="new-lead leads">
+    <div class="side-circle">
+      <div class="new-circle"></div>
+      <h4>New Leads</h4>
     </div>
-  </body>
+
+    <p class="align">Just added to pipeline</p>
+
+    <div class="rectangle1"></div>
+    <div class="rectangle2"><p>12 Leads</p></div>
+
+    <p class="color-percentage">35%</p>
+  </div>
+
+
+  <div class="new-lead contacted">
+    <div class="side-circle">
+      <div class="new-circle"></div>
+      <h4>Contacted</h4>
+    </div>
+
+    <p class="align">Reached out awaiting response</p>
+
+    <div class="rectangle1"></div>
+    <div class="rectangle2"><p>8 Leads</p></div>
+
+    <p class="color-percentage">23%</p>
+  </div>
+
+
+  <div class="new-lead interested">
+    <div class="side-circle">
+      <div class="new-circle"></div>
+      <h4>Interested</h4>
+    </div>
+
+    <p class="align">Showing strong interest</p>
+
+    <div class="rectangle1"></div>
+    <div class="rectangle2"><p>6 Leads</p></div>
+
+    <p class="color-percentage">17%</p>
+  </div>
+
+
+  <div class="new-lead negotiation">
+    <div class="side-circle">
+      <div class="new-circle"></div>
+      <h4>Negotiating</h4>
+    </div>
+
+    <p class="align">Discussing terms and pricing</p>
+
+    <div class="rectangle1"></div>
+    <div class="rectangle2"><p>4 Leads</p></div>
+
+    <p class="color-percentage">11%</p>
+  </div>
+
+
+  <div class="new-lead closed">
+    <div class="side-circle">
+      <div class="new-circle"></div>
+      <h4>Closed / Won</h4>
+    </div>
+
+    <p class="align">Deal successfully closed</p>
+
+    <div class="rectangle1"></div>
+    <div class="rectangle2"><p>3 Leads</p></div>
+
+    <p class="color-percentage">8%</p>
+  </div>
+
+
+  <div class="new-lead lost">
+    <div class="side-circle">
+      <div class="new-circle"></div>
+      <h4>Lost</h4>
+    </div>
+
+    <p class="align">Did not convert</p>
+
+    <div class="rectangle1"></div>
+    <div class="rectangle2"><p>1 Leads</p></div>
+
+    <p class="color-percentage">2%</p>
+  </div>
+
+</div>
+
+</div>
+
+    </main>
+
+  </div>
+</body>
+
 </html>

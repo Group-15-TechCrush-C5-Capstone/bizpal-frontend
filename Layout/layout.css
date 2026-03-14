@@ -11,7 +11,7 @@ body {
 .container {
   display: grid;
   grid-template-columns: 356px 1fr;
-  grid-template-rows: 110px 600px;
+  grid-template-rows: 80px 600px;
 }
 
 .side-container {
@@ -253,26 +253,348 @@ font-size: 23px;
   font-size: 14px;
 }
 
-.date-box {
+.topbar-right {
   display: flex;
+  gap: 20px;
   align-items: center;
-  background-color: #112240; 
-  color: white;
-  padding: 10px 15px;
-  border-radius: 8px;
-  gap: 10px;
 }
 
-.date-box img {
+.exportsvg {
   width: 20px;
   height: 20px;
 }
 
-.date-box span {
+.lead-group, .export-group {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background-color: #112240;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 6px;
+  cursor: pointer;
   font-size: 15px;
-  font-weight: 500;
+  font-weight: 800;
 }
 
 .main{
     padding: 20px;
+}
+
+.pipeline-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    background-color: #112240;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 20px;
+    gap: 10px;
+} 
+
+.header-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.btn-grade {
+  display: flex;
+ align-items: center;
+justify-content: center;
+gap: 5px;
+flex-direction: column;
+    color: white;
+    cursor: pointer;
+}
+
+
+.btn-grade h4{
+font-weight: 600;
+font-size: 20px;
+}
+
+
+.pipeline-grade-btn {
+    background-color: #c89b3c;
+    color: white;
+    padding: 5px 20px;
+    border: none;
+    width: fit-content;
+    border-radius: 20px;
+    font-size: 23px;
+    font-weight: 800;
+}
+
+.header-content h4 {
+font-style: Bold;
+font-size: 30px;
+}
+
+.header-content p {
+font-weight: 400;
+font-size: 20px;
+}
+
+.graded{
+  color: #C89B3C;
+}
+
+.grade-stats{
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+
+.lead-statistics{
+  background:#F3F4F6;
+  padding:10px;
+  border-radius:12px;
+  display:flex;
+  justify-content: space-between;
+  flex-direction:column;
+  gap:6px;
+}
+
+
+/* EACH ROW */
+
+ .new-lead {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr); /* 5 equal columns */
+  justify-content: space-around;         /* distributes columns with space around */
+  column-gap: 20px;
+  align-items: center;
+  background-color: #E6E6E6;
+  padding: 10px 15px;
+  border-radius: 8px;
+}
+
+
+
+
+/* LEFT SECTION */
+
+.side-circle{
+  display:flex;
+  align-items:center;
+  gap:12px;
+}
+
+.new-circle{
+  width:18px;
+  height:18px;
+  border-radius:50%;
+}
+
+.side-circle h4{
+  color:#2A6070;
+  font-size:15px;
+  font-weight:800;
+}
+
+
+/* DESCRIPTION */
+
+.align{
+  color:#2A6070;
+  font-size:13px;
+  font-weight:700;
+}
+
+
+/* PROGRESS BAR */
+
+.rectangle1{
+  width:60%;
+  height:20px;
+  border-radius:20px;
+}
+
+
+/* LEAD COUNT */
+
+.rectangle2{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  width:70px;
+  height:20px;
+  border-radius:20px;
+  color:white;
+  font-size:12px;
+  font-weight:600;
+}
+
+.rectangle2 p{
+  color:white;
+}
+
+
+/* PERCENTAGE */
+
+.color-percentage{
+  font-size:13px;
+  font-weight:700;
+}
+
+
+
+/* ===== COLORS PER STAGE ===== */
+
+
+/* NEW LEADS */
+
+.leads .new-circle{
+  background:#4A90D9;
+}
+
+.leads .rectangle1{
+  background:#4A90D9;
+  width:70%;
+}
+
+.leads .rectangle2{
+  background:#4A90D9;
+}
+
+.leads .color-percentage{
+  color:#4A90D9;
+}
+
+
+
+/* CONTACTED */
+
+.contacted .new-circle{
+  background:#1A7A4A;
+}
+
+.contacted .rectangle1{
+  background:#1A7A4A;
+  width:50%;
+}
+
+.contacted .rectangle2{
+  background:#1A7A4A;
+}
+
+.contacted .color-percentage{
+  color:#1A7A4A;
+}
+
+
+
+/* INTERESTED */
+
+.interested .new-circle{
+  background:#C89B3C;
+}
+
+.interested .rectangle1{
+  background:#C89B3C;
+  width:35%;
+}
+
+.interested .rectangle2{
+  background:#C89B3C;
+}
+
+.interested .color-percentage{
+  color:#C89B3C;
+}
+
+
+
+/* NEGOTIATING */
+
+.negotiation .new-circle{
+  background:#7B0F41;
+}
+
+.negotiation .rectangle1{
+  background:#7B0F41;
+  width:35%;
+}
+
+.negotiation .rectangle2{
+  background:#7B0F41;
+}
+
+.negotiation .color-percentage{
+  color:#7B0F41;
+}
+
+
+
+/* CLOSED */
+
+.closed .new-circle{
+  background:#0BFF85;
+}
+
+.closed .rectangle1{
+  background:#0BFF85;
+  width:35%;
+}
+
+.closed .rectangle2{
+  background:#0BFF85;
+}
+
+.closed .color-percentage{
+  color:#0BFF85;
+}
+
+
+
+/* LOST */
+
+.lost .new-circle{
+  background:#80160B;
+}
+
+.lost .rectangle1{
+  background:#80160B;
+  width:20%;
+}
+
+.lost .rectangle2{
+  background:#80160B;
+}
+
+.lost .color-percentage{
+  color:#80160B;
+}
+.new-lead.new .rectangle2 {
+  right: 5px;
+}
+
+.new-lead.interested .rectangle2 {
+  right: 3px;
+}
+
+.new-lead.contact .rectangle2 {
+  right: 17px;
+}
+
+.new-lead.negotiation .rectangle2 {
+  left: 7px;
+  right: auto;
+}
+
+.new-lead.closed .rectangle2 {
+  left: 18px;
+  right: auto;
+}
+
+.new-lead.lost .rectangle2 {
+  right: 12px;
+}
+
+
+.new-lead.contacted, .new-lead.negotiation, .new-lead.lost {
+  background-color: transparent;
 }
