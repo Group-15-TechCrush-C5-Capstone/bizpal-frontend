@@ -813,7 +813,7 @@ body {
     margin-bottom: 1.2rem;
     font-size: .8rem;
     font-weight: 400;
-    color: #FFFFFF;
+    color: rgba(191, 183, 183, 1);
 }
 
 #paid-price {
@@ -854,7 +854,7 @@ body {
 .paid-details-list li p {
     font-size: 1rem;
     font-weight: 400;
-    color: #FFFFFF;
+    color: rgba(191, 183, 183, 1);
 }
 
 .users {
