@@ -614,6 +614,7 @@ table {
   box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
 
+
 th, td {
   padding: 5px 12px;
 text-align: center;
@@ -626,6 +627,7 @@ th{
 }
 
 td{
+  
   color: #2A6070;
 font-size: 15px;
 font-weight: 800;
