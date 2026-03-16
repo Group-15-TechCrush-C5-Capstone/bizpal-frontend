@@ -11,7 +11,7 @@ body {
 .container {
   display: grid;
   grid-template-columns: 356px 1fr;
-  grid-template-rows: 80px 600px;
+  grid-template-rows: 70px 600px;
 }
 
 .side-container {
@@ -278,19 +278,19 @@ font-size: 23px;
 }
 
 .main{
-    padding: 20px;
+    padding: 15px 20px;
 }
 
 .pipeline-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     background-color: #112240;
     color: white;
-    padding: 10px 15px;
+    padding: 6px 10px;
     border-radius: 20px;
-    gap: 10px;
+    gap: 2px;
 } 
 
 .header-content {
@@ -303,10 +303,10 @@ font-size: 23px;
   display: flex;
  align-items: center;
 justify-content: center;
-gap: 5px;
 flex-direction: column;
     color: white;
     cursor: pointer;
+    gap: 3px;
 }
 
 
@@ -319,7 +319,7 @@ font-size: 20px;
 .pipeline-grade-btn {
     background-color: #c89b3c;
     color: white;
-    padding: 5px 20px;
+    padding: 1px 10px;
     border: none;
     width: fit-content;
     border-radius: 20px;
@@ -348,31 +348,24 @@ font-size: 20px;
 }
 
 
-.lead-statistics{
-  background:#F3F4F6;
-  padding:10px;
-  border-radius:12px;
-  display:flex;
-  justify-content: space-between;
-  flex-direction:column;
-  gap:6px;
+.lead-statistics {
+  background: #FFFFFF;
+  padding: 12px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;              /* smaller gap between rows */
 }
-
 
 /* EACH ROW */
-
- .new-lead {
+.new-lead {
   display: grid;
-  grid-template-columns: repeat(5, 1fr); /* 5 equal columns */
-  justify-content: space-around;         /* distributes columns with space around */
-  column-gap: 20px;
+  grid-template-columns: 200px 1fr 2fr 90px; /* 4 columns only */
   align-items: center;
   background-color: #E6E6E6;
-  padding: 10px 15px;
+  padding: 8px 15px;
   border-radius: 8px;
 }
-
-
 
 
 /* LEFT SECTION */
@@ -408,12 +401,26 @@ font-size: 20px;
 /* PROGRESS BAR */
 
 .rectangle1{
-  width:60%;
+  width:70%;
   height:20px;
   border-radius:20px;
+    grid-column: 3;   /* place in column 3 */
+  grid-row: 1;     
 }
 
+/* Group bar + badge */
+.rectangle-container {
+  display: flex;
+  align-items: center;
+  position: relative; /* allows left/right offsets for rectangle2 */
+  flex: 1;
+  gap: 8px;
+}
 
+.rect-container{
+  display: flex;
+  gap: 80px;
+}
 /* LEAD COUNT */
 
 .rectangle2{
@@ -426,7 +433,12 @@ font-size: 20px;
   color:white;
   font-size:12px;
   font-weight:600;
+   grid-column: 3;   /* same column as rectangle1 */
+  grid-row: 1;      /* same row as rectangle1 */
+  justify-self: end; /* push it to the right side of the cell */
 }
+
+
 
 .rectangle2 p{
   color:white;
@@ -453,7 +465,7 @@ font-size: 20px;
 
 .leads .rectangle1{
   background:#4A90D9;
-  width:70%;
+  width:80%;
 }
 
 .leads .rectangle2{
@@ -474,7 +486,7 @@ font-size: 20px;
 
 .contacted .rectangle1{
   background:#1A7A4A;
-  width:50%;
+  width:65%;
 }
 
 .contacted .rectangle2{
@@ -495,7 +507,7 @@ font-size: 20px;
 
 .interested .rectangle1{
   background:#C89B3C;
-  width:35%;
+  width:50%;
 }
 
 .interested .rectangle2{
@@ -516,7 +528,7 @@ font-size: 20px;
 
 .negotiation .rectangle1{
   background:#7B0F41;
-  width:35%;
+  width:40%;
 }
 
 .negotiation .rectangle2{
@@ -528,7 +540,6 @@ font-size: 20px;
 }
 
 
-
 /* CLOSED */
 
 .closed .new-circle{
@@ -537,7 +548,7 @@ font-size: 20px;
 
 .closed .rectangle1{
   background:#0BFF85;
-  width:35%;
+  width:25%;
 }
 
 .closed .rectangle2{
@@ -558,7 +569,7 @@ font-size: 20px;
 
 .lost .rectangle1{
   background:#80160B;
-  width:20%;
+  width:15%;
 }
 
 .lost .rectangle2{
@@ -568,33 +579,105 @@ font-size: 20px;
 .lost .color-percentage{
   color:#80160B;
 }
-.new-lead.new .rectangle2 {
-  right: 5px;
-}
-
-.new-lead.interested .rectangle2 {
-  right: 3px;
-}
-
-.new-lead.contact .rectangle2 {
-  right: 17px;
-}
-
-.new-lead.negotiation .rectangle2 {
-  left: 7px;
-  right: auto;
-}
-
-.new-lead.closed .rectangle2 {
-  left: 18px;
-  right: auto;
-}
-
-.new-lead.lost .rectangle2 {
-  right: 12px;
-}
-
 
 .new-lead.contacted, .new-lead.negotiation, .new-lead.lost {
   background-color: transparent;
 }
+
+.color-percentage{
+display: flex;
+justify-content: end;
+}
+
+
+
+.view-all {
+  font-size: 15px;
+  font-weight: 800;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  margin-bottom: 5px;
+  color: #2A6070;
+}
+
+.view-all p{
+  font-size: 14px;
+  font-weight: 700;
+}
+
+table {
+  width: 100%;
+  padding:12px;
+  border-collapse: collapse;
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+th, td {
+  padding: 5px 12px;
+text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+
+th{
+  font-size: 15px;
+  font-weight: 800;
+}
+
+td{
+  color: #2A6070;
+font-size: 15px;
+font-weight: 800;
+}
+
+th {
+  background-color: #112240;
+  color: #fff;
+}
+
+.contact-reach{
+
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.last-activity{
+  font-size: 15px;
+  font-weight: 400;
+}
+
+tr:hover {
+  background-color: #f1f1f1;
+}
+
+.stage {
+  padding: 6px 10px;
+  border-radius: 15px;
+  color: white;
+  font-weight: bold;
+  display: inline-block;
+  font-size: 15px;
+  font-weight: 800;
+}
+
+.negotiating { background-color: #7B0F41; }
+.interest { background-color: #C89B3C; }
+.contacted { background-color: #1A7A4A; }
+.new-leads { background-color: #4A90D9; }
+
+.action-btn {
+  background-color: #1A7A4A;
+  color: #fff;
+  padding: 6px 12px;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.action-btn:hover {
+  background-color: #005bb5;
+}
+
