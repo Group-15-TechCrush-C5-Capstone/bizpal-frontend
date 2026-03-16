@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="en">
+  <head>
+   <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BizPal</title>
+   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="/Layout/layout.css">
+    <script src="/js/script.js" defer></script>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="side-container">
+        <!-- Left Sidebar -->
+        <aside class="sidebar1">
+          <div class="nickname">
+            <div class="icon-wrapper">
+              <span class="initials">CE</span>
+            </div>
+          </div>
+          <div class="shop-name">
+            <h1>Chidi's</h1>
+            <p>Electronics</p>
+          </div>
+        </aside>
+
+        <!-- Left Sidebar -->
+        <aside class="sidebar2">
+          <nav>
+            <ul class="nav-links">
+              <li class="dashboard">
+                <a class="other-link" href="index.html">
+                  <img src="Layout icons/Dashboard.svg" alt="Dashboard icon" />
+                  Dashboard
+                </a>
+              </li>
+              <li>
+                <a class="other-link" href="customers.html">
+                  <img src="Layout icons/Customer.svg" alt="Customers icon" />
+                  Customers
+                </a>
+              </li>
+              <li>
+                <a class="other-link" href="lead.html">
+                  <img src="Layout icons/Lead.svg" alt="Lead Pipeline icon" />
+                  Lead Pipeline
+                </a>
+              </li>
+              <li>
+                <a class="other-link" href="notes.html">
+                  <img src="Layout icons/Notes.svg" alt="Notes icon" /> Notes
+                </a>
+              </li>
+              <li>
+                <a class="other-link" href="followups.html">
+                  <img
+                    src="Layout icons/Follow-ups.svg"
+                    alt="Follow-ups icon"
+                  />
+                  Follow-ups
+                </a>
+              </li>
+              <li class="report">
+                <a class="other-link" href="reports.html">REPORTS</a>
+              </li>
+              <li>
+                <a class="main-link" href="analytics.html">
+                  <img
+                    src="Layout icons/carbon_analytics.svg"
+                    alt="Analytics icon"
+                  />
+                  Analytics
+                </a>
+              </li>
+              <li>
+                <a class="other-link" href="settings.html">
+                  <img src="Layout icons/Settings.svg" alt="Settings icon" />
+                  Settings
+                </a>
+              </li>
+            </ul>
+          </nav>
+
+          <!-- profile picture upload control -->
+          <input type="file" id="profile-upload" accept="image/*" hidden />
+          <label for="profile-upload" class="profile-button">
+            <div class="profile-pic">
+              <img id="profile-img" src="Layout icons/Ellipse 13.svg" alt="Profile Picture" />
+              <span id="profile-initial" class="initial">C</span>
+            </div>
+            <div class="profile-info">
+              <h4>Chidi Okafor</h4>
+              <p>Admin</p>
+            </div>
+          </label>
+        </aside>
+      </div>
+
+      <!-- Top Bar -->
+      <header class="topbar">
+        <div class="topbar-left">
+          <h1>Analytics Report</h1>
+          <p>Here’s what’s happening at your shop today</p>
+        </div>
+
+        <div class="topbar-right">
+          <div class="date-box">
+            <img src="Layout icons/Calendar.svg" alt="Calendar Icon" />
+            <span id="current-date">Friday, Jun 13 2026</span>
+          </div>
+        </div>
+      </header>
+
+      <!-- Main Content -->
+      <main class="main">
+        <div class="top-container">
+          <div class="inner-top">
+            <div class="page-title"">
+              <h1>CRM Analytics</h1>
+              <p>Performance overview. Chidi’s Electronics. March 2026</p>
+            </div>
+            <button class="download-btn">
+              <img src="Layout icons/download icon.svg" alt="Download icon">
+              <h2>Download PDF - </h2>
+              <img src="Layout icons/naira icon.svg" alt="Naira icon">
+              <h2>2000</h2>
+            </button>
+          </div>
+          <div class="inner-bottom">
+            <div class="crm-box">
+              <h1 id="box1-title">41.7%</h1>
+              <p>Conversion Rate</p>
+            </div>
+            <div class="crm-box">
+              <h1>6 days</h1>
+              <p>Avg. Deal Cycle</p>
+            </div>
+            <div class="crm-box">
+              <h1>Walk-in</h1>
+              <p>Top Lead Source</p>
+            </div>
+          </div>
+        </div>
+        <div class="bottom-container">
+          <div class="right-bottom">
+            <h3>Pipeline Stage Breakdown</h3>
+            <hr>
+            <img class="stat-img" src="Layout icons/breakdown icon.svg" alt="">
+          </div>
+          <div class="right-bottom">
+            <h3>Stage Drop-off Rates</h3>
+            <hr>
+            <div class="progress-bar">
+              <div class="new">
+                <div id="new-details">
+                  <h4>New</h4>
+                  <img src="Layout icons/arrow icon.svg" alt="">
+                  <h4>Contacted</h4>
+                </div>
+                <div id="outer-bar">
+                  <div id="inner-bar">
+                  </div>
+                </div>
+                <h4 class="color-text">75%</h4>
+              </div>
+              <div class="new">
+                <div id="new-details">
+                  <h4>Contacted</h4>
+                  <img src="Layout icons/arrow icon.svg" alt="">
+                  <h4>Int.</h4>
+                </div>
+                <div id="outer-bar1">
+                  <div id="inner-bar1">
+                  </div>
+                </div>
+                <h4 class="color-text1">55%</h4>
+              </div>
+              <div class="new">
+                <div id="new-details">
+                  <h4>Int.</h4>
+                  <img src="Layout icons/arrow icon.svg" alt="">
+                  <h4>Closed</h4>
+                </div>
+                <div id="outer-bar2">
+                  <div id="inner-bar2">
+                  </div>
+                </div>
+                <h4 class="color-text2">38%</h4>
+              </div>
+            </div>
+            <div class="recor">
+              <div class="recor-title">
+                <img src="Layout icons/recor icon.svg" alt="">
+                <h4>Recommendation </h4>
+              </div>
+              <p>38% of interested leads are not closing. Try following up within 24 hours of showing interest to improve this rate</p>
+            </div>
+            <button class="fullpdf-btn">
+              <img src="Layout icons/download icon.svg" alt="">
+              <h2>Download  Full PDF Report</h2>
+            </button>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>
