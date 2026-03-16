@@ -4,8 +4,14 @@
     box-sizing: border-box;
 }
 
-.container{
-    max-width: 1300px;
-    margin: 0 auto;
-    padding: 0 20px;
+.top-track{
+    display: flex;
+    align-items: center;
+    font-size: 46px;
+    font-weight: 600;
+    gap: 15px;
+    width: 100%;
+    height: 70px;
+    background-color: #112240;
+    color: white;
 }
