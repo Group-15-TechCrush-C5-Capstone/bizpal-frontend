@@ -1,13 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Style.css">
     <title>Bizpal CRM</title>
+     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
 </head>
+
 <body>
-    <div class="container">
-        <!-- Content goes here -->
+
+    <div class="top-logo">
+        <img src="track-lead icons/bizpal logo.svg" alt="bizpal logo">
+        <h4>Bizpal</h4>
     </div>
+
+    <div class="track-container"></div>
+
+    <!-- MAIN CONTENT WRAPPER -->
+    <div class="page-content">
+
+        <div class="back-click">
+            <div class="back-clicked">
+                <img src="track-lead icons/back-click.svg" alt="back-click">
+            </div>
+            <h4>Back to Pipeline</h4>
+        </div>
+
+        <div class="track-info">
+            <h1>Track a Lead</h1>
+            <p>Add lead details to follow the deal through your sales pipeline.</p>
+        </div>
+
+        <div class="required">Required fields</div>
+
+        <div class="customer-box1">
+            <div class="required2">CUSTOMER</div>
+            <div class="customer-line"></div>
+        </div>
+
+        <div class="name-here">Customer Name</div>
+
+        <div class="input-name">
+            <input type="text" placeholder="Adaeze Nwosu">
+            <input class="customer-check" type="checkbox">
+        </div>
+
+        <div class="pre-fill">
+            <p>Pre-filled from customer profile ·</p>
+            <h4>Change customer</h4>
+        </div>
+
+        <div class="customer-dec"></div>
+
+        <div class="customer-box2">
+            <div class="required-3">LEAD DETAILS</div>
+            <div class="customer-line"></div>
+        </div>
+
+        <div class="lead-status">Lead Status</div>
+
+        <div class="status-lead">
+            <div class="l-new">🟣 New</div>
+            <div class="l-contacts">🟢 Contacted</div>
+            <div class="l-interest">🔵 Interested</div>
+            <div class="l-nego">🟡 Negotiation</div>
+            <div class="l-closed">⚫️ Closed</div>
+            <div class="l-lost">🔴 Lost</div>
+        </div>
+
+        <div class="selection">Select the current stage of this lead</div>
+
+        <div class="lead-status">Lead Source</div>
+
+        <div class="status-lead">
+            <div class="l-new">Walk-in</div>
+            <div class="l-contacts">Referral</div>
+            <div class="l-interest">Whatsapp</div>
+            <div class="l-nego">Instagram</div>
+            <div class="l-closed">Phone call</div>
+            <div class="l-lost">Other</div>
+        </div>
+
+        <div class="expected-container">
+            <div class="square">₦</div>
+            <input type="text" placeholder="e.g. 150,000">
+            <input type="date">
+        </div>
+
+        <div class="customer-dec"></div>
+
+        <div class="customer-box3">
+            <div class="required-3">NOTES</div>
+            <div class="customer-line2"></div>
+        </div>
+
+        <div class="selection2">
+            <h4>Notes</h4>
+            <p>(Optional)</p>
+        </div>
+
+        <div class="note-container">
+            <textarea placeholder="e.g. Adaeze runs a tailoring shop in Surulere. She’s interested in the ₦150k package. Follow up after the weekend..."></textarea>
+        </div>
+
+        <button class="save-lead">Save Lead →</button>
+
+    </div>
+
 </body>
+
 </html>
