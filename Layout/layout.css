@@ -11,7 +11,7 @@ body {
 .container {
   display: grid;
   grid-template-columns: 356px 1fr;
-  grid-template-rows: 110px 600px;
+  grid-template-rows: 80px 600px;
 }
 
 .side-container {
@@ -253,10 +253,11 @@ font-size: 23px;
   font-size: 14px;
 }
 
+
 .date-box {
   display: flex;
   align-items: center;
-  background-color: #112240; 
+  background-color: #E6E6E6; 
   color: white;
   padding: 10px 15px;
   border-radius: 8px;
@@ -275,4 +276,178 @@ font-size: 23px;
 
 .main{
     padding: 20px;
+}
+
+.notes-container{
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 200px 1fr;
+  gap: 15px;
+}
+
+/* LEFT */
+
+.note-card{
+  border: 1px solid #C89B3C;
+  border-radius: 15px;
+  padding: 15px;
+  margin-bottom: 15px;
+  background: #F1F1EC;
+  height: fit-content;
+  width: fit-content;
+}
+
+.note-card.active{
+  border: 2px solid #2a7de1;
+  width: 66%;
+}
+
+/* top section */
+.note-top{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.avatar{
+  background: #d6a85c;
+  color: black;
+  font-weight: bold;
+  font-size: 20px;
+  font-weight: 800;
+  padding: 10px;
+  border-radius: 50%;
+}
+
+.note-info{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.note-info h4{
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.time{
+  font-size: 15px;
+  color: gray;
+  font-weight: 400;
+}
+
+/* text */
+.note-text{
+  font-size: 15px;
+  margin: 10px 0;
+  font-weight: 500;
+}
+
+/* follow */
+.follow{
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.follow-edit{
+  display: flex;
+  justify-content: space-between;
+align-items: center;
+  gap: 10px;
+}
+
+.yellow{font-size: 15px; font-weight: 700;width: fit-content; border-radius: 52px; padding: 10px;background-color: #FFE493; color: #E0AC25; }
+.red{ color: #F00C0C; font-size: 15px; font-weight: 600; }
+.green{ color: #5CB484;font-size: 15px; font-weight: 600; }
+
+/* actions */
+.note-actions{
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.edit{
+  font-size: 20px;
+  font-weight: 500;
+  background: #424F66;
+  color: white;
+  border: none;
+  padding: 5px 30px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.delete{
+  background: #fff;
+  color: #F00C0C;
+  border: 1px solid #F00C0C;
+  padding: 5px 30px;
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+/* RIGHT SIDE */
+.notes-right{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.add-btn{
+  align-self: flex-end;
+  background: #C89B3C;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.form-card{
+  border: 1px solid #C89B3C;
+  border-radius: 15px;
+  padding: 15px;
+  color: #112240;
+}
+
+.form-card h3{
+  margin-bottom: 10px;
+}
+
+
+
+.form-card label{
+  font-size: 12px;
+  font-weight: bold;
+  display: block;
+  margin-top: 10px;
+  color: #2A6070;
+}
+
+.form-card input,
+.form-card select,
+.form-card textarea{
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border-radius: 8px;
+  color: #2A6070;
+font-weight: 600;
+  border: 1px solid #C89B3C;
+}
+
+.form-card textarea{
+  height: 80px;
+  resize: none;
+}
+
+.save-btn{
+  width: 100%;
+  margin-top: 15px;
+  padding: 10px;
+  background: #1A4331;
+  color: white;
+  border: none;
+  border-radius: 8px;
 }
