@@ -12,7 +12,7 @@
 
   <body>
     <div class="container">
-      <div class="side-container">
+      <div class="side-container-settings">
         <!-- Left Sidebar -->
         <aside class="sidebar1">
           <div class="nickname">
@@ -100,22 +100,164 @@
 
       <!-- Top Bar -->
       <header class="topbar">
-        <div class="topbar-left">
-          <h1>Good morning, Chidi 👋</h1>
-          <p>Here’s what’s happening at your shop today</p>
+        <div class="mobile-top">
+          <div class="hamburger" onclick="toggleMenu()">
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+          <div class="mobile-logo">
+            <img src="Layout icons/logo.svg" alt="">
+            <h2>Bizpal</h2>
+          </div>
         </div>
-
-        <div class="topbar-right">
+        <div class="main-topbar">
+          <div class="topbar-left">
+            <h1>Settings</h1>
+            <p>Here’s what’s happening at your shop today</p>
+          </div>
           <div class="date-box">
             <img src="Layout icons/Calendar.svg" alt="Calendar Icon" />
-            <span id="current-date">Friday, Jun 13 2026</span>
+            <h2>Friday, Jun 13 2026</h2>
           </div>
         </div>
       </header>
 
       <!-- Main Content -->
       <main class="main">
-        
+        <section class="settings-main">
+          <div class="left-details">
+          <div id="main-details">
+            <img src="Layout icons/profile icon.svg" alt="">
+            <h4>Profile</h4>
+          </div>
+          <div id="details">
+            <img src="Layout icons/noti icon.svg" alt="">
+            <h4>Notification</h4>
+          </div>
+          <div id="details">
+            <img src="Layout icons/security icon.svg" alt="">
+            <h4>Security</h4>
+          </div>
+          <div id="details">
+            <img src="Layout icons/billing icon.svg" alt="">
+            <h4>Billing</h4>
+          </div>
+          <div id="details">
+            <img src="Layout icons/data icon.svg" alt="">
+            <h4>Export Data</h4>
+          </div>
+        </div>
+        <div class="right-details">
+          <div class="profile-details">
+            <div class="profile-top">
+              <h4>Business Profile</h4>
+              <p>Update your business name and contact details</p>
+            </div>
+            <form action="">
+              <div class="details-field">
+                <label for="business-name">Business Name</label>
+                <input type="text" id="business-name">
+              </div>
+              <div class="details-field">
+                <label for="other-name">Other Name</label>
+                <input type="text" id="other-name">
+              </div>
+              <div class="details-field">
+                <label for="email">Email</label>
+                <input type="email" id="email">
+              </div>
+              <div class="details-field">
+                <label for="number">Phone</label>
+                <input type="number" id="number">
+              </div>
+            </form>
+          </div>
+          <div class="notification">
+            <div class="noti-details">
+              <h4>Notification Preferences</h4>
+              <p>Choose when and how Bizpal alerts you</p>
+            </div>
+            <hr>
+            <div class="noti-details-right">
+              <div class="noti-details">
+                <h4>Follow-up reminders</h4>
+                <p>Cart notified when a follow-up is due</p>
+              </div>
+              <input type="checkbox">
+            </div>
+            <hr>
+            <div class="noti-details-right">
+              <div class="noti-details">
+                <h4>Overdue reminders</h4>
+                <p>Alert when reminders are pass due</p>
+              </div>
+              <input type="checkbox">
+            </div>
+            <hr>
+            <div class="noti-details-right">
+              <div class="noti-details">
+                <h4>Email notifications</h4>
+                <p>Receive daily summary to your email</p>
+              </div>
+              <input type="checkbox">
+            </div>
+          </div>
+          <div class="notification">
+            <div class="noti-details">
+              <h4>Your Plan</h4>
+              <p>You are on the Pro Plans</p>
+            </div>
+            <hr>
+            <div class="pro-plan">
+              <div class="star-plan">
+                <img src="Layout icons/Star icon.svg" alt="">
+                <div class="plan-right">
+                  <h2>Pro Plans</h2>
+                  <p>Unlimited customers. Full pipelines. Analytics reports. One time Payment</p>
+                </div>
+              </div>
+              <div class="plan-left">
+                Active
+              </div>
+            </div>
+            <p class="purchase">Purchased on March 10, 2028 for N2,000. Never expires.</p>
+          </div>
+          <div class="security">
+            <h4 class="main-head">Danger Zone</h4>
+            <hr>
+            <div class="danger">
+              <h4>Danger Zone</h4>
+              <p>Permanently deletes all your customers, leads and roads. </p>
+            </div>
+            <div class="danger">
+              <h4>Danger Zone</h4>
+              <p>Permanently deletes all your customers, leads and roads. </p>
+            </div>
+          </div>
+          <div class="mobile-icons">
+          <div class="other-icon">
+            <img src="Layout icons/home icon.svg" alt="">
+            <a href="index.html">Home</a>
+          </div>
+          <div class="other-icon">
+            <img src="Layout icons/people icon.svg" alt="">
+            <a href="">Customers</a>
+          </div>
+          <div class="other-icon">
+            <img src="Layout icons/chart icon.svg" alt="">
+            <a href="analytics.html">Leads</a>
+          </div>
+          <div class="other-icon">
+            <img src="Layout icons/time cion.svg" alt="">
+            <a href="">Follow-ups</a>
+          </div>
+          <div class="main-icon">
+            <img src="Layout icons/settings icon.svg" alt="">
+            <a href="settings.html">Settings</a>
+          </div>
+        </div>
+        </section>
       </main>
     </div>
   </body>

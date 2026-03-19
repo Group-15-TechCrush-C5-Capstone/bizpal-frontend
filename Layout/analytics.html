@@ -12,7 +12,7 @@
 
   <body>
     <div class="container">
-      <div class="side-container">
+      <div class="side-container-analytics">
         <!-- Left Sidebar -->
         <aside class="sidebar1">
           <div class="nickname">
@@ -100,29 +100,40 @@
 
       <!-- Top Bar -->
       <header class="topbar">
-        <div class="topbar-left">
-          <h1>Analytics Report</h1>
-          <p>Here’s what’s happening at your shop today</p>
+        <div class="mobile-top">
+          <div class="hamburger" onclick="toggleMenu()">
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+          <div class="mobile-logo">
+            <img src="Layout icons/logo.svg" alt="">
+            <h2>Bizpal</h2>
+          </div>
         </div>
-
-        <div class="topbar-right">
+        <div class="main-topbar">
+          <div class="topbar-left">
+            <h1>Analytics Report</h1>
+            <p>Here’s what’s happening at your shop today</p>
+          </div>
           <div class="date-box">
             <img src="Layout icons/Calendar.svg" alt="Calendar Icon" />
-            <span id="current-date">Friday, Jun 13 2026</span>
+            <h2>Friday, Jun 13 2026</h2>
           </div>
         </div>
       </header>
 
       <!-- Main Content -->
       <main class="main">
-        <div class="top-container">
+        <section class="anlytics-main">
+          <div class="top-container">
           <div class="inner-top">
             <div class="page-title"">
               <h1>CRM Analytics</h1>
               <p>Performance overview. Chidi’s Electronics. March 2026</p>
             </div>
             <button class="download-btn">
-              <img src="Layout icons/download icon.svg" alt="Download icon">
+              <img id="naira-icon" src="Layout icons/download icon.svg" alt="Download icon">
               <h2>Download PDF - </h2>
               <img src="Layout icons/naira icon.svg" alt="Naira icon">
               <h2>2000</h2>
@@ -203,6 +214,29 @@
             </button>
           </div>
         </div>
+        <div class="mobile-icons">
+          <div class="other-icon">
+            <img src="Layout icons/home icon.svg" alt="">
+            <a href="index.html">Home</a>
+          </div>
+          <div class="other-icon">
+            <img src="Layout icons/people icon.svg" alt="">
+            <a href="">Customers</a>
+          </div>
+          <div class="main-icon">
+            <img src="Layout icons/chart icon.svg" alt="">
+            <a href="analytics.html">Leads</a>
+          </div>
+          <div class="other-icon">
+            <img src="Layout icons/time cion.svg" alt="">
+            <a href="">Follow-ups</a>
+          </div>
+          <div class="other-icon">
+            <img src="Layout icons/settings icon.svg" alt="">
+            <a href="settings.html">Settings</a>
+          </div>
+        </div>
+        </section>
       </main>
     </div>
   </body>

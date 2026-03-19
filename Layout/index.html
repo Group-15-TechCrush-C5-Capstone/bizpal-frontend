@@ -100,23 +100,57 @@
 
       <!-- Top Bar -->
       <header class="topbar">
-        <div class="topbar-left">
-          <h1>Good morning, Chidi 👋</h1>
-          <p>Here’s what’s happening at your shop today</p>
+        <div class="mobile-top">
+          <div class="hamburger" onclick="toggleMenu()">
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+          <div class="mobile-logo">
+            <img src="Layout icons/logo.svg" alt="">
+            <h2>Bizpal</h2>
+          </div>
         </div>
-
-        <div class="topbar-right">
+        <div class="main-topbar">
+          <div class="topbar-left">
+            <h1>Good morning, Chidi 👋</h1>
+            <p>Here’s what’s happening at your shop today</p>
+          </div>
           <div class="date-box">
             <img src="Layout icons/Calendar.svg" alt="Calendar Icon" />
-            <span id="current-date">Friday, Jun 13 2026</span>
+            <h2>Friday, Jun 13 2026</h2>
           </div>
         </div>
       </header>
 
       <!-- Main Content -->
       <main class="main">
-        <h2>Lead Pipeline</h2>
-        <p>Your main content goes here...</p>
+        <section class="index-main">
+          <h2>Lead Pipeline</h2>
+          <p>Your main content goes here...</p>
+          <div class="mobile-icons">
+          <div class="main-icon">
+            <img src="Layout icons/home icon.svg" alt="">
+            <a href="index.html">Home</a>
+          </div>
+          <div class="other-icon">
+            <img src="Layout icons/people icon.svg" alt="">
+            <a href="">Customers</a>
+          </div>
+          <div class="other-icon">
+            <img src="Layout icons/chart icon.svg" alt="">
+            <a href="analytics.html">Leads</a>
+          </div>
+          <div class="other-icon">
+            <img src="Layout icons/time cion.svg" alt="">
+            <a href="">Follow-ups</a>
+          </div>
+          <div class="other-icon">
+            <img src="Layout icons/settings icon.svg" alt="">
+            <a href="settings.html">Settings</a>
+          </div>
+        </div>
+        </section>
       </main>
     </div>
   </body>
