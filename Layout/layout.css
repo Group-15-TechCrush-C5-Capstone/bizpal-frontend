@@ -17,7 +17,7 @@ body {
 .side-container {
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  height: 110vh;
 }
 
 .sidebar1 {
@@ -80,7 +80,7 @@ body {
   background-color: #112240;
   color: #BFB7B7;
   width: 356px;
-  height: 622px;
+height:110vh;
   padding-left: 25px;
 }
 
@@ -180,7 +180,7 @@ font-size: 23px;
   width: 300px;
   height: 78px;
   border-radius: 10px;
-  margin-top: 3rem;
+  margin-top: 8rem;
   text-decoration: none; 
 }
 
@@ -282,7 +282,7 @@ font-size: 23px;
   display: grid;
   grid-template-columns: 2fr 1fr;
   grid-template-rows: 200px 1fr;
-  gap: 15px;
+  gap: 20px;
 }
 
 /* LEFT */
@@ -290,7 +290,7 @@ font-size: 23px;
 .note-card{
   border: 1px solid #C89B3C;
   border-radius: 15px;
-  padding: 15px;
+  padding: 10px;
   margin-bottom: 15px;
   background: #F1F1EC;
   height: fit-content;
@@ -306,7 +306,7 @@ font-size: 23px;
 .note-top{
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 2px;
 }
 
 .avatar{
