@@ -122,9 +122,13 @@ height:165vh;
 }
 
 .topbar {
-  grid-row: 1;
-  grid-column: 2;
-  background-color: white;
+  display: flex;
+  justify-content: center;   /* center everything horizontally */
+  align-items: center;       /* center vertically */
+  padding: 20px;
+  background-color: #fff;
+  border-bottom: #112240 solid 1px;
+  gap: 20px;                 /* spacing between items */
 }
 
 .main {
@@ -203,6 +207,12 @@ height:165vh;
   font-weight: 800;
   font-size: 25px;
   margin: 0;
+}
+
+.topbar-left{
+display: flex;
+align-items: center;
+gap: 10px;
 }
 
 .topbar-left p {
@@ -442,3 +452,7 @@ font-size: 15px;
 .gray-text{
   color: gray;
 }
+
+
+
+
