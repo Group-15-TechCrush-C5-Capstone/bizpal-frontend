@@ -92,13 +92,11 @@
     </div>
 
     <!-- Top Bar -->
-  <header class="topbar">
+<header class="topbar">
   <div class="topbar-left">
-    <div class="shop-name">
-      <h1>Follow-up Reminders</h1>
-    </div>
+    <button class="hamburger" id="hamburger-btn">&#9776;</button>
+    <h1>Follow-up Reminders</h1>
   </div>
-
   <div class="topbar-right">
     <div class="date-box">🔔</div>
   </div>
@@ -261,6 +259,23 @@
 
   </main>
   </div>
+<script>
+const hamburgerBtn = document.getElementById('hamburger-btn');
+const sideContainer = document.querySelector('.side-container');
+const container = document.querySelector('.container');
+
+hamburgerBtn.addEventListener('click', () => {
+  // Only toggle sidebar on desktop
+  if (window.innerWidth > 768) {
+    sideContainer.classList.toggle('show');
+    container.classList.toggle('sidebar-hidden');
+  }
+  // On mobile: do nothing
+});
+
+
+
+</script>
 
 </body>
 
