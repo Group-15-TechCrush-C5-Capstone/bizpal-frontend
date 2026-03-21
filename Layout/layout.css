@@ -371,13 +371,18 @@ align-items: center;
 justify-content: center;
 }
 
-.reds{
-   width: 50px;
-  height: 50px;
-  border-radius: 15px;
-  background:#F00C0C47; 
+.reds {
+  width: 50px;           
+  height: 50px;          
+  border-radius: 50px;   /* This creates the round/pill shape */
+  background: #F00C0C47; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  /* THE CRITICAL MOBILE FIX */
+  flex-shrink: 0;        /* Prevents mobile from squishing the shape */
 }
-
 
 .ye{
    width: 50px;
@@ -508,6 +513,8 @@ font-size: 15px;
   .hamburger {
     display: block; /* visible, but inactive */
   }
+
+  
 
   }
 
