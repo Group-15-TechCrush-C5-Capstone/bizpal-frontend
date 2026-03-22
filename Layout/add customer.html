@@ -5,10 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BizPal</title>
    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <link
-    rel="stylesheet"
-    type="text/css"
-    href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.2/src/duotone/style.css"
+   <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.2/src/bold/style.css"
     />
     <link rel="stylesheet" href="/Layout/layout.css">
     <script src="/js/script.js" defer></script>
@@ -16,7 +16,7 @@
 
   <body>
     <div class="container">
-      <div class="side-container-settings">
+      <div class="side-container-customer">
         <!-- Left Sidebar -->
         <aside class="sidebar1">
           <div class="nickname">
@@ -41,7 +41,7 @@
                 </a>
               </li>
               <li>
-                <a class="other-link" href="customers.html">
+                <a class="main-link" href="customers.html">
                   <img src="Layout icons/Customer.svg" alt="Customers icon" />
                   Customers
                 </a>
@@ -79,7 +79,7 @@
                 </a>
               </li>
               <li>
-                <a class="main-link" href="settings.html">
+                <a class="other-link" href="settings.html">
                   <img src="Layout icons/Settings.svg" alt="Settings icon" />
                   Settings
                 </a>
@@ -116,135 +116,71 @@
           </div>
         </div>
         <div class="main-topbar">
-          <div class="topbar-left">
-            <h1>Settings</h1>
-            <p>Here’s what’s happening at your shop today</p>
+          <div class="addcustomer-topbar">
+            <img src="Layout icons/arrow icon.svg" alt="">
+            <h1>Customers</h1>
           </div>
-          <div class="date-box">
-            <img src="Layout icons/Calendar.svg" alt="Calendar Icon" />
-            <h2>Friday, Jun 13 2026</h2>
-          </div>
+          <!-- <div class="search-box">
+            <img class="search-icon" src="Layout icons/search.svg" alt="">
+            <input class="search" type="search" placeholder="Search Customers....">
+            <img class="notification-icon" src="Layout icons/notification icon.svg" alt="">
+          </div> -->
         </div>
       </header>
 
       <!-- Main Content -->
       <main class="main">
-        <section class="settings-main">
-          <div class="left-details">
-          <div id="main-details">
-            <img src="Layout icons/profile icon.svg" alt="">
-            <h4>Profile</h4>
-          </div>
-          <div id="details">
-            <img src="Layout icons/noti icon.svg" alt="">
-            <h4>Notification</h4>
-          </div>
-          <div id="details">
-            <img src="Layout icons/security icon.svg" alt="">
-            <h4>Security</h4>
-          </div>
-          <div id="details">
-            <img src="Layout icons/billing icon.svg" alt="">
-            <h4>Billing</h4>
-          </div>
-          <div id="details">
-            <img src="Layout icons/data icon.svg" alt="">
-            <h4>Export Data</h4>
-          </div>
-        </div>
-        <div class="right-details">
-          <div class="profile-details">
-            <div class="profile-top">
-              <h4>Business Profile</h4>
-              <p>Update your business name and contact details</p>
+        <section class="add-customer-main">
+          <div class="add-title">
+            <h1>Add New Customer</h1>
+            <p>Fill in the details below to save this customer.</p>
+            <p class="required">Required Field</p>
+            <div class="basic">
+                <h1>BASIC INFORMATION</h1>
+                <hr>
             </div>
-            <form action="">
-              <div class="details-field">
-                <label for="business-name">Business Name</label>
-                <input type="text" id="business-name">
-              </div>
-              <div class="details-field">
-                <label for="other-name">Other Name</label>
-                <input type="text" id="other-name">
-              </div>
-              <div class="details-field">
-                <label for="email">Email</label>
-                <input type="email" id="email">
-              </div>
-              <div class="details-field">
-                <label for="number">Phone</label>
-                <input type="number" id="number">
-              </div>
-            </form>
-          </div>
-          <div class="notification">
-            <div class="noti-details">
-              <h4>Notification Preferences</h4>
-              <p>Choose when and how Bizpal alerts you</p>
-            </div>
-            <hr>
-            <div class="noti-details-right">
-              <div class="noti-details">
-                <h4>Follow-up reminders</h4>
-                <p>Cart notified when a follow-up is due</p>
-              </div>
-              <input type="checkbox">
-            </div>
-            <hr>
-            <div class="noti-details-right">
-              <div class="noti-details">
-                <h4>Overdue reminders</h4>
-                <p>Alert when reminders are pass due</p>
-              </div>
-              <input type="checkbox">
-            </div>
-            <hr>
-            <div class="noti-details-right">
-              <div class="noti-details">
-                <h4>Email notifications</h4>
-                <p>Receive daily summary to your email</p>
-              </div>
-              <input type="checkbox">
-            </div>
-          </div>
-          <div class="notification">
-            <div class="noti-details">
-              <h4>Your Plan</h4>
-              <p>You are on the Pro Plans</p>
-            </div>
-            <hr>
-            <div class="pro-plan">
-              <div class="star-plan">
-                <img src="Layout icons/Star icon.svg" alt="">
-                <div class="plan-right">
-                  <h2>Pro Plans</h2>
-                  <p>Unlimited customers. Full pipelines. Analytics reports. One time Payment</p>
+            <div class="add-input">
+                <div class="add-details">
+                    <label for="text">Customer Name </label>
+                    <input type="text" placeholder="e.g. Chidi Okafor">
                 </div>
-              </div>
-              <div class="plan-left">
-                Active
-              </div>
+                <div class="add-details">
+                    <label for="number">Phone Number</label>
+                    <input type="number" placeholder="e.g. 0803 456 7890">
+                </div>
+                <div class="add-details">
+                    <label for="email">Email Address (Optional)</label>
+                    <input type="email" placeholder="e.g. chidi@example.com">
+                </div>
+                <div class="add-details">
+                    <label for="text">Business Type</label>
+                    <input type="text" placeholder="e.g. Retail Shop">
+                </div>
             </div>
-            <p class="purchase">Purchased on March 10, 2028 for N2,000. Never expires.</p>
-          </div>
-          <div class="security">
-            <h4 class="main-head">Danger Zone</h4>
-            <hr>
-            <div class="danger">
-              <h4>Danger Zone</h4>
-              <p>Permanently deletes all your customers, leads and roads. </p>
+            <div class="add-location">
+                <label for="text">Business Type</label>
+                <div>
+                    <input type="text" placeholder="e.g. Yaba, Lagos">
+                    <p>City or neighbourhood — helps you understand where your customers come from</p>
+                </div>
             </div>
-            <div class="danger">
-              <h4>Danger Zone</h4>
-              <p>Permanently deletes all your customers, leads and roads. </p>
+            <hr class="bottom-line">
+            <div class="add-note">
+                <h1>ADDITIONAL NOTE</h1>
+                <hr>
             </div>
+            <div class="add-message">
+                <label for="text">Notes (Optional)</label>
+                <textarea name="" rows="5" id="text" placeholder="e.g. Referred by Ngozi. Interested in the premium package. Prefers calls in the morning..."></textarea>
+            </div>
+            <a class="save-btn" href="customers.html">Save Customer →</a>
           </div>
           <div class="mobile-icons">
-          <div class="other-icon">
+            <div class="other-icon">
             <img src="Layout icons/home icon.svg" alt="">
             <a href="index.html">Home</a>
           </div>
-          <div class="other-icon">
+          <div class="main-icon">
             <img src="Layout icons/people icon.svg" alt="">
             <a href="customer.html">Customers</a>
           </div>
@@ -256,11 +192,10 @@
             <img src="Layout icons/time cion.svg" alt="">
             <a href="">Follow-ups</a>
           </div>
-          <div class="main-icon">
+          <div class="other-icon">
             <img src="Layout icons/settings icon.svg" alt="">
             <a href="settings.html">Settings</a>
           </div>
-        </div>
         </section>
       </main>
     </div>

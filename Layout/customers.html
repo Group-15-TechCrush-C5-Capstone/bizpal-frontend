@@ -5,10 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BizPal</title>
    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <link
-    rel="stylesheet"
-    type="text/css"
-    href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.2/src/duotone/style.css"
+   <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.2/src/bold/style.css"
     />
     <link rel="stylesheet" href="/Layout/layout.css">
     <script src="/js/script.js" defer></script>
@@ -16,7 +16,7 @@
 
   <body>
     <div class="container">
-      <div class="side-container-settings">
+      <div class="side-container-analytics">
         <!-- Left Sidebar -->
         <aside class="sidebar1">
           <div class="nickname">
@@ -41,7 +41,7 @@
                 </a>
               </li>
               <li>
-                <a class="other-link" href="customers.html">
+                <a class="main-link" href="customers.html">
                   <img src="Layout icons/Customer.svg" alt="Customers icon" />
                   Customers
                 </a>
@@ -79,7 +79,7 @@
                 </a>
               </li>
               <li>
-                <a class="main-link" href="settings.html">
+                <a class="other-link" href="settings.html">
                   <img src="Layout icons/Settings.svg" alt="Settings icon" />
                   Settings
                 </a>
@@ -117,134 +117,101 @@
         </div>
         <div class="main-topbar">
           <div class="topbar-left">
-            <h1>Settings</h1>
-            <p>Here’s what’s happening at your shop today</p>
+            <h1>Customers</h1>
+            <!-- <p>Here`s what`s happening at your shop today</p> -->
           </div>
-          <div class="date-box">
-            <img src="Layout icons/Calendar.svg" alt="Calendar Icon" />
-            <h2>Friday, Jun 13 2026</h2>
+          <div class="search-box">
+            <img class="search-icon" src="Layout icons/search.svg" alt="">
+            <input class="search" type="search" placeholder="Search Customers....">
+            <img class="notification-icon" src="Layout icons/notification icon.svg" alt="">
           </div>
         </div>
       </header>
 
       <!-- Main Content -->
       <main class="main">
-        <section class="settings-main">
-          <div class="left-details">
-          <div id="main-details">
-            <img src="Layout icons/profile icon.svg" alt="">
-            <h4>Profile</h4>
-          </div>
-          <div id="details">
-            <img src="Layout icons/noti icon.svg" alt="">
-            <h4>Notification</h4>
-          </div>
-          <div id="details">
-            <img src="Layout icons/security icon.svg" alt="">
-            <h4>Security</h4>
-          </div>
-          <div id="details">
-            <img src="Layout icons/billing icon.svg" alt="">
-            <h4>Billing</h4>
-          </div>
-          <div id="details">
-            <img src="Layout icons/data icon.svg" alt="">
-            <h4>Export Data</h4>
-          </div>
-        </div>
-        <div class="right-details">
-          <div class="profile-details">
-            <div class="profile-top">
-              <h4>Business Profile</h4>
-              <p>Update your business name and contact details</p>
+        <section class="customer-main">
+          <div class="customer-details">
+            <div class="customer-top">
+              <div class="top-details">
+                <h1>All Customers</h1>
+                <span>12 customers total, 5 active leads</span>
+              </div>
+              <a href="add customer.html">+ Add Customer</a>
             </div>
-            <form action="">
-              <div class="details-field">
-                <label for="business-name">Business Name</label>
-                <input type="text" id="business-name">
-              </div>
-              <div class="details-field">
-                <label for="other-name">Other Name</label>
-                <input type="text" id="other-name">
-              </div>
-              <div class="details-field">
-                <label for="email">Email</label>
-                <input type="email" id="email">
-              </div>
-              <div class="details-field">
-                <label for="number">Phone</label>
-                <input type="number" id="number">
-              </div>
-            </form>
-          </div>
-          <div class="notification">
-            <div class="noti-details">
-              <h4>Notification Preferences</h4>
-              <p>Choose when and how Bizpal alerts you</p>
-            </div>
-            <hr>
-            <div class="noti-details-right">
-              <div class="noti-details">
-                <h4>Follow-up reminders</h4>
-                <p>Cart notified when a follow-up is due</p>
-              </div>
-              <input type="checkbox">
-            </div>
-            <hr>
-            <div class="noti-details-right">
-              <div class="noti-details">
-                <h4>Overdue reminders</h4>
-                <p>Alert when reminders are pass due</p>
-              </div>
-              <input type="checkbox">
-            </div>
-            <hr>
-            <div class="noti-details-right">
-              <div class="noti-details">
-                <h4>Email notifications</h4>
-                <p>Receive daily summary to your email</p>
-              </div>
-              <input type="checkbox">
-            </div>
-          </div>
-          <div class="notification">
-            <div class="noti-details">
-              <h4>Your Plan</h4>
-              <p>You are on the Pro Plans</p>
-            </div>
-            <hr>
-            <div class="pro-plan">
-              <div class="star-plan">
-                <img src="Layout icons/Star icon.svg" alt="">
-                <div class="plan-right">
-                  <h2>Pro Plans</h2>
-                  <p>Unlimited customers. Full pipelines. Analytics reports. One time Payment</p>
+            <div class="customer-center">
+              <div class="center-details">
+                <div class="active">
+                  <h4>All</h4>
+                  <span>(12)</span>
+                </div>
+                <div class="other">
+                  <h4>Active Leads</h4>
+                  <span>(5)</span>
+                </div>
+                <div class="other">
+                  <h4>Closed</h4>
+                  <span>(3)</span>
                 </div>
               </div>
-              <div class="plan-left">
-                Active
+            </div>
+            <div class="customer-bottom">
+              <div class="details1">
+                <h2>CUSTOMERS</h2>
+                <div class="customer-profile">
+                  <input type="image">
+                  <div class="interested">
+                    <h4>Emeka Nwosu</h4>
+                    <p>Samsung TV repair</p>
+                  </div>
+                </div>
+                <div class="customer-profile">
+                  <input type="image">
+                  <div class="interested">
+                    <h4>Emeka Nwosu</h4>
+                    <p>Samsung TV repair</p>
+                  </div>
+                </div>
               </div>
-            </div>
-            <p class="purchase">Purchased on March 10, 2028 for N2,000. Never expires.</p>
-          </div>
-          <div class="security">
-            <h4 class="main-head">Danger Zone</h4>
-            <hr>
-            <div class="danger">
-              <h4>Danger Zone</h4>
-              <p>Permanently deletes all your customers, leads and roads. </p>
-            </div>
-            <div class="danger">
-              <h4>Danger Zone</h4>
-              <p>Permanently deletes all your customers, leads and roads. </p>
+              <div class="details2">
+                <h2>NUMBER</h2>
+                <p>08012345678</p>
+                <p>08012345678</p>
+              </div>
+              <div class="details3">
+                <h2>LOCATION</h2>
+                <p>Lagos Island</p>
+                <p>Ikeja</p>
+              </div>
+              <div class="details4">
+                <h2>STATUS</h2>
+                <span>Interested</span>
+                <span>New</span>
+              </div>
+              <div class="details5">
+                <h2>CONTACT</h2>
+                <P>2hrs ago</P>
+                <P>5hrs ago</P>
+              </div>
+              <div class="details6">
+                <h2>ACTION</h2>
+                <div class="view-edit">
+                  <a href="">View</a>
+                  <a href="">Edit</a>
+                </div>
+                <div class="view-edit">
+                  <a href="">View</a>
+                  <a href="">Edit</a>
+                </div>
+              </div>
             </div>
           </div>
           <div class="mobile-icons">
-          <div class="other-icon">
+            <div class="other-icon">
             <img src="Layout icons/home icon.svg" alt="">
             <a href="index.html">Home</a>
           </div>
-          <div class="other-icon">
+          <div class="main-icon">
             <img src="Layout icons/people icon.svg" alt="">
             <a href="customer.html">Customers</a>
           </div>
@@ -256,11 +223,10 @@
             <img src="Layout icons/time cion.svg" alt="">
             <a href="">Follow-ups</a>
           </div>
-          <div class="main-icon">
+          <div class="other-icon">
             <img src="Layout icons/settings icon.svg" alt="">
             <a href="settings.html">Settings</a>
           </div>
-        </div>
         </section>
       </main>
     </div>
