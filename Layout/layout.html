@@ -50,9 +50,10 @@
                 Lead Pipeline
               </a>
             </li>
-            <li>
-              <a href="notes.html">
-                <img src="Layout icons/Notes.svg" alt="Notes icon" /> Notes
+              <li>
+              <a href="lead.html">
+                <img class="note-icon" src="Layout icons/notes.svg" alt="Lead Pipeline icon" />
+               Notes
               </a>
             </li>
             <li>
@@ -97,8 +98,15 @@
     <!-- Top Bar -->
     <header class="topbar">
       <div class="topbar-left">
+        <div class="follow-reminder">
+          <div class="ham">
+        <button class="hamburger" id="hamburger-btn">&#9776;</button>
+        
         <h1>Good morning, Chidi 👋</h1>
+        </div>
         <p>Here’s what’s happening at your shop today</p>
+        
+        </div>
       </div>
 
       <div class="topbar-right">
@@ -177,21 +185,28 @@
 
 
 
-      <img class="funnel" src="Layout icons/note.svg" alt="Dashboard Image" />
+      <img class="funnel" src="Layout icons/follow icon.png" alt="Dashboard Image" />
       <div class="Lead-Header">
       <div class="Lead-Info">
-        <h1>No notes yet</h1>
-        <p>Log your first customer interaction to start tracking  </p>
-          <p>follow-ups</p>
+        <h1>No follow-ups due</h1>
+        <p>Great work! You are all caught up. Notes you save will create</p>
+          <p> reminders automatically.</p>
       </div>
 
-      <div class="Lead-btn">
-        <button>Add a Note</button>
-      </div>
       </div>
   </main>
 
 </div>
+
+<script>
+const hamburgerBtn = document.getElementById('hamburger-btn');
+const sideContainer = document.querySelector('.side-container');
+
+hamburgerBtn.addEventListener('click', () => {
+  // Toggle sidebar for ALL screen sizes
+  sideContainer.classList.toggle('hidden');
+});
+</script>
 </body>
 
 </html>
