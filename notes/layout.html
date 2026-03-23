@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BizPal</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="/notes/layout.css">
+  <script src="/js/script.js"></script>
+</head>
+
+<body>
+  <div class="container">
+    <div class="side-container">
+      <!-- Left Sidebar -->
+      <aside class="sidebar1">
+        <div class="nickname">
+          <div class="icon-wrapper">
+            <span class="initials">CE</span>
+          </div>
+        </div>
+        <div class="shop-name">
+          <h1>Chidi's</h1>
+          <p>Electronics</p>
+        </div>
+      </aside>
+
+      <!-- Left Sidebar -->
+      <aside class="sidebar2">
+        <nav>
+          <ul class="nav-links">
+            <li class="dashboard">
+              <a href="dashboard.html">
+                <img src="Layout icons/Dashboard.svg" alt="Dashboard icon" />
+                Dashboard
+              </a>
+            </li>
+            <li>
+              <a href="customers.html">
+                <img src="Layout icons/Customer.svg" alt="Customers icon" />
+                Customers
+              </a>
+            </li>
+            <li>
+              <a href="lead.html">
+                <img src="Layout icons/Lead.svg" alt="Lead Pipeline icon" />
+                Lead Pipeline
+              </a>
+            </li>
+            <li>
+              <a href="notes.html">
+                <img src="Layout icons/Notes.svg" alt="Notes icon" /> Notes
+              </a>
+            </li>
+            <li>
+              <a href="followups.html">
+                <img src="Layout icons/Follow-ups.svg" alt="Follow-ups icon" />
+                Follow-ups
+              </a>
+            </li>
+            <li class="report">
+              <a href="reports.html">REPORTS</a>
+            </li>
+            <li>
+              <a href="analytics.html">
+                <img src="Layout icons/carbon_analytics.svg" alt="Analytics icon" />
+                Analytics
+              </a>
+            </li>
+            <li>
+              <a href="settings.html">
+                <img src="Layout icons/Settings.svg" alt="Settings icon" />
+                Settings
+              </a>
+            </li>
+          </ul>
+        </nav>
+
+        <!-- profile picture upload control -->
+        <input type="file" id="profile-upload" accept="image/*" hidden />
+        <label for="profile-upload" class="profile-button">
+          <div class="profile-pic">
+            <img id="profile-img" src="Layout icons/Ellipse 13.svg" alt="Profile Picture" />
+            <span id="profile-initial" class="initial">C</span>
+          </div>
+          <div class="profile-info">
+            <h4>Chidi Okafor</h4>
+            <p>Admin</p>
+          </div>
+        </label>
+      </aside>
+    </div>
+
+    <!-- Top Bar -->
+    <header class="topbar">
+      <div class="topbar-left">
+        <div class="shop-name">
+          <h1>Notes and Interactions</h1>
+        </div>
+      </div>
+
+      <div class="topbar-right">
+        <div class="date-box">
+          <img class="notify" src="Layout icons/notify.svg">
+        </div>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main">
+      <div class="notes-container">
+
+        <!-- LEFT SIDE -->
+
+        <!-- CARD -->
+        <div class="note-card">
+          <div class="note-top">
+            <div class="avatar">AO</div>
+            <div class="note-info">
+              <h4>Amaka Okonkwo</h4>
+              <p class="time">Today 11:30 am</p>
+            </div>
+          </div>
+
+          <p class="note-text">
+            Called Amaka about the bulk order for her shop. She is very interested in the Samsung A-series tablets.
+            Said she needs at least 5 units. Will confirm budget with her partner before committing. She sounded
+            positive
+          </p>
+   <div class="follow-edit">
+          <p class="follow yellow">Follow-ups: Tomorrow</p>
+            <div class="note-actions">
+              <button class="edit">Edit</button>
+              <button class="delete">Delete</button>
+            </div>
+          </div>
+        </div>
+
+
+
+        <!-- RIGHT SIDE -->
+        <div class="notes-right">
+
+          <button class="add-btn">+ Add Note</button>
+
+          <div class="form-card">
+            <h3>+Add New Note</h3>
+
+            <label>Customer</label>
+            <select>
+              <option>Select Customer</option>
+            </select>
+
+            <label>Note</label>
+            <textarea placeholder="What happened in this interaction? Be specific"></textarea>
+
+            <label>Customer Follow-up Date</label>
+            <input class="year" type="text" placeholder="DD/MM/YY">
+
+            <button class="save-btn">Save Note</button>
+          </div>
+
+        </div>
+
+
+
+
+        <!-- CARD -->
+        <div class="note-card">
+          <div class="note-top">
+            <div class="avatar">TA</div>
+            <div class="note-info">
+              <h4>Tolu Ademeyi</h4>
+              <p class="time">Yesterday 4:45 pm</p>
+            </div>
+          </div>
+
+          <p class="note-text">
+            Long call with Tolu. She wants POS terminals for her salon but is negotiating on the monthly fee.
+            Offered her a 3 months free trial. She needs to think about it. Promising lead- do not let this go cold.
+          </p>
+ <div class="follow-edit">
+          <p class="follow red">Follow-up overdue!</p>
+
+          <div class="note-actions">
+            <button class="edit">Edit</button>
+            <button class="delete">Delete</button>
+          </div>
+          </div>
+        </div>
+
+
+      </div>
+
+
+
+
+      <!-- CARD -->
+      <div class="note-card active">
+        <div class="note-top">
+          <div class="avatar">EA</div>
+          <div class="note-info">
+            <h4>Emeka Eze</h4>
+            <p class="time">Yesterday 3:15 pm</p>
+          </div>
+        </div>
+
+        <p class="note-text">
+          Emeka walked into the shop asking about phone screen repairs. His iPhone 13 screen is cracked.
+          Gave him a quote of ₦35000 for the repair. He said he will come back after work to drop it off.
+        </p>
+
+         <div class="follow-edit"></div>
+        <p class="follow green">Follow-up se – Mar 12</p>
+
+        <div class="note-actions">
+          <button class="edit">Edit</button>
+          <button class="delete">Delete</button>
+        </div>
+      </div>
+      </div>
+
+
+
+  </div>
+
+  </main>
+  </div>
+</body>
+
+</html>
