@@ -17,8 +17,9 @@ body {
 .side-container {
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  height: 81.5rem;
 }
+
 
 .sidebar1 {
   display: flex;
