@@ -1,0 +1,282 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BizPal</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="/Layout/layout.css">
+  <script src="/js/script.js"></script>
+</head>
+
+<body>
+  <div class="container">
+    <div class="side-container">
+
+
+      <!-- Left Sidebar -->
+      <aside class="sidebar1">
+        
+         <img src="Layout icons/B (1).svg" alt="Llogo">
+          <h1>Bizpal</h1>
+    
+      </aside>
+
+      <!-- Left Sidebar -->
+      <aside class="sidebar2">
+        <nav>
+          <ul class="nav-links">
+            <li class="dashboard">
+              <a href="dashboard.html">
+                <img src="Layout icons/Dashboard.svg" alt="Dashboard icon" />
+                Dashboard
+              </a>
+            </li>
+            <li>
+              <a href="customers.html">
+                <img src="Layout icons/Customer.svg" alt="Customers icon" />
+                Customers
+              </a>
+            </li>
+            <li>
+              <a href="lead.html">
+                <img src="Layout icons/Lead.svg" alt="Lead Pipeline icon" />
+                Lead Pipeline
+              </a>
+            </li>
+            <li>
+              <a href="notes.html">
+                <img src="Layout icons/Notes.svg" alt="Notes icon" /> Notes
+              </a>
+            </li>
+            <li>
+              <a href="followups.html">
+                <img src="Layout icons/Follow-ups.svg" alt="Follow-ups icon" />
+                Follow-ups
+              </a>
+            </li>
+            <li class="report">
+              <a href="reports.html">REPORTS</a>
+            </li>
+            <li>
+              <a href="analytics.html">
+                <img src="Layout icons/carbon_analytics.svg" alt="Analytics icon" />
+                Analytics
+              </a>
+            </li>
+            <li>
+              <a href="settings.html">
+                <img src="Layout icons/Settings.svg" alt="Settings icon" />
+                Settings
+              </a>
+            </li>
+          </ul>
+        </nav>
+
+        <!-- profile picture upload control -->
+        <input type="file" id="profile-upload" accept="image/*" hidden />
+        <label for="profile-upload" class="profile-button">
+          <div class="profile-pic">
+            <img id="profile-img" src="Layout icons/Ellipse 13.svg" alt="Profile Picture" />
+            <span id="profile-initial" class="initial">C</span>
+          </div>
+          <div class="profile-info">
+            <h4>Chidi Okafor</h4>
+            <p>Admin</p>
+          </div>
+        </label>
+      </aside>
+    </div>
+
+    <!-- Top Bar -->
+<header class="topbar">
+  <div class="topbar-left">
+    <button class="hamburger" id="hamburger-btn">&#9776;</button>
+    <h1>Follow-up Reminders</h1>
+  </div>
+  <div class="topbar-right">
+    <div class="date-box">🔔</div>
+  </div>
+</header>
+
+
+
+    <!-- Main Content -->
+    <main class="main">
+      <div class="followup-container">
+
+ 
+  <!-- TITLE + STATS -->
+  <div class="followup-title">
+
+    <div class="follow-reminder">
+    <h1>Follow-up Reminders</h1>
+    <p>12 customers total, 5 active leads</p>
+  </div>
+  
+    <div class="status-summary">
+      <span class="badge red">● 2 overdue</span>
+      <span class="badge yellow">● 1 today</span>
+    </div>
+  </div>
+
+  <!-- OVERDUE -->
+  <h4 class="section overdue">OVERDUE</h4>
+
+  <div class="reminder-card">
+
+
+
+    <div class="left">
+      <div class="dots reds">
+     <span class="dot green"></span>
+      </div>
+      <div>
+        <p class="title">Call about bulk Samsung tablet order</p>
+        
+        <span class="sub">
+          <div class="sub-sub">
+          <img src="Layout icons/Shapes.svg" alt="">
+          Amaka Okonkwo. Mar 8</span>
+          </div>
+      </div>
+
+
+
+    </div>
+
+
+
+    <div class="right">
+      <span class="tag red">3 days overdue</span>
+      <p class="done">✔ Mark Done</p>
+    </div>
+  </div>
+
+  <div class="reminder-card">
+    <div class="left">
+      <div class="dots reds">
+      <span class="dot red"></span>
+      </div>
+      <div>
+        <p class="title">Follow up on POS terminal negotiation</p>
+        <div class="sub-sub">
+          <img src="Layout icons/purple.svg" alt="">
+        <span class="sub">Tolu Ademeyi. Mar 7</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="right">
+      <span class="tag red">4 days overdue</span>
+      <p class="done">✔ Mark Done</p>
+    </div>
+  </div>
+
+  <!-- TODAY -->
+  <h4 class="section today">DUE TODAY</h4>
+
+  <div class="reminder-card">
+
+
+    <div class="left">
+
+      <div class="dots ye">
+      <span class="dot yellow"></span>
+      </div>
+
+      <div>
+
+        <p class="title">Send iPhone 13 repair quote to Emeka</p>
+        <div class="sub-sub">
+          <img src="Layout icons/grren.svg" alt="">
+        <span class="sub">Emeka Eze. this morning</span>
+
+        </div>
+      </div>
+
+
+    </div>
+
+
+
+    <div class="right">
+      <span class="tag yellow">Due Today</span>
+      <p class="done">✔ Mark Done</p>
+    </div>
+  </div>
+
+  <!-- UPCOMING -->
+  <h4 class="section upcoming">UPCOMING</h4>
+
+  <div class="reminder-card">
+    <div class="left">
+      <div class="dots greens">
+      <span class="dot green"></span>
+      </div>
+      <div>
+        <p class="title">Check if Fatima wants to reorder more stock</p>
+        <div class="sub-sub">
+          <img src="Layout icons/purple.svg" alt="">
+        <span class="sub">Fatima Bello. close note</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="right">
+      <span class="tag green">Tomorrow</span>
+      <p class="done">✔ Mark Done</p>
+    </div>
+  </div>
+
+  <!-- COMPLETED -->
+  <h4 class="section completed">COMPLETED</h4>
+
+  <div class="reminder-card completed-card">
+    <div class="left">
+      <div class="dots dchecks">
+      <span class="check">✔</span>
+      </div>
+  
+      <div>
+        <p class="title">Send product catalogue to Ibrahim</p>
+         <div class="sub-sub">
+          <img src="Layout icons/purple.svg" alt="">
+        <span class="sub">Ibrahim Musa. Completed Mar 9</span>
+      </div>
+    </div>
+    </div>
+    <div class="right">
+      <span class="tag gray">Done</span>
+      <p class="done gray-text">✔ Done</p>
+    </div>
+  </div>
+
+</div>
+
+  </main>
+  </div>
+<script>
+const hamburgerBtn = document.getElementById('hamburger-btn');
+const sideContainer = document.querySelector('.side-container');
+const container = document.querySelector('.container');
+
+hamburgerBtn.addEventListener('click', () => {
+  // Only toggle sidebar on desktop
+  if (window.innerWidth > 768) {
+    sideContainer.classList.toggle('show');
+    container.classList.toggle('sidebar-hidden');
+  }
+  // On mobile: do nothing
+});
+
+
+
+</script>
+
+</body>
+
+</html>
