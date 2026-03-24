@@ -43,33 +43,33 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 
-    // HERO BUTTONS
-    const seeHowBtn = document.querySelector(".login-btn");
-    const getStartedBtns = document.querySelectorAll(".get-started-btn");
+    // // HERO BUTTONS
+    // const seeHowBtn = document.querySelector(".login-btn");
+    // const getStartedBtns = document.querySelectorAll(".get-started-btn");
 
-    seeHowBtn.addEventListener("click", () => {
-        dashboardSection.scrollIntoView({ behavior: "smooth" });
-    });
+    // seeHowBtn.addEventListener("click", () => {
+    //     dashboardSection.scrollIntoView({ behavior: "smooth" });
+    // });
 
-    getStartedBtns.forEach(btn => {
-        btn.addEventListener("click", () => {
-            alert("Welcome to BizPal! Account setup coming soon.");
-        });
-    });
+    // getStartedBtns.forEach(btn => {
+    //     btn.addEventListener("click", () => {
+    //         alert("Welcome to BizPal! Account setup coming soon.");
+    //     });
+    // });
 
 
 
-    // NAVBAR BUTTONS
-    const loginBtn = document.getElementById("login-btn");
-    const getStartedNav = document.getElementById("get-started-btn");
+    // // NAVBAR BUTTONS
+    // const loginBtn = document.getElementById("login-btn");
+    // const getStartedNav = document.getElementById("get-started-btn");
 
-    loginBtn.addEventListener("click", () => {
-        alert("Login page coming soon.");
-    });
+    // loginBtn.addEventListener("click", () => {
+    //     alert("Login page coming soon.");
+    // });
 
-    getStartedNav.addEventListener("click", () => {
-        alert("Create your BizPal account!");
-    });
+    // getStartedNav.addEventListener("click", () => {
+    //     alert("Create your BizPal account!");
+    // });
 
 
 

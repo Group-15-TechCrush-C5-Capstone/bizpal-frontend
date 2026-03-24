@@ -9,6 +9,72 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
+.nav-links {
+  display: flex;
+  flex-direction: column;
+  padding-top: 35px;
+  list-style-type: none;
+  gap: 3px;
+}
+
+.other-link {
+  font-size: 1.3rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  text-decoration: none;   
+  color: rgba(191, 183, 183, 1);             
+  border-radius: 6px;     
+  padding: 10px 15px;
+  width: 220px;
+  border-radius: 6px; 
+  transition: background-color 0.3s ease; 
+}
+
+.main-link {
+  font-size: 1.3rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  text-decoration: none;   
+  color: #fff;             
+  border-radius: 6px;     
+  padding: 10px 15px;
+  width: 220px;
+  border-radius: 6px; 
+  transition: background-color 0.3s ease;
+}
+
+.other-link:hover {
+  background-color: #2A6070; 
+  color: #fff;               
+}
+
+.nav-links li img {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+
+.nav-links .dashboard a {
+  font-size: 1.5rem;
+  color: white;
+}
+
+
+.nav-links .report a {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: white;
+}
+
+.main-link {
+  background-color: #2A6070; 
+}
+
 /* GRID LAYOUT */
 .container {
   display: grid;
