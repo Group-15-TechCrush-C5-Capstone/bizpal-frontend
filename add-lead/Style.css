@@ -1,0 +1,282 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+
+/* HEADER (UNCHANGED) */
+.top-logo{
+ display: flex;
+ align-items: center;
+ gap: 20px;
+ padding: 5px 30px;
+ color: white;
+ background-color:#112240;
+ width: 100%;
+ height: 70px;
+}
+
+.top-logo h4{
+ font-size: 46px;
+ font-weight: 600;
+}
+
+.top-logo img{
+    width: 50px;
+    height: 48px;
+}
+
+/* MAIN CONTENT WRAPPER */
+.page-content{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    margin: 20px 80px 20px 25px; /* left smaller, right bigger */
+}
+
+/* FORCE ALL CHILDREN FULL WIDTH */
+.page-content > div {
+    width: 100%;
+}
+
+/* BACK */
+.back-click{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+     font-size: 30px;
+     font-weight: 600;
+    padding:5px 30px ;
+    color: #1E3A5F;
+}
+
+.back-clicked{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #112240;
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+}
+
+.back-clicked img{
+    width: 30px;
+    height: 20px;
+}
+
+/* INFO */
+.track-info{
+    padding:5px;
+}
+
+.track-info h1{
+    color: #112240;
+    font-size: 100px;
+    font-weight: 700;
+}
+
+.track-info p {
+    color: #1E3A5F;
+    font-size: 30px;
+    font-weight: 400;
+}
+
+/* TEXT */
+.required {
+    padding:5px;
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.required{
+    color: #2A6070;
+}
+
+.required2{
+    font-size: 30px;
+    font-weight: 700;
+    color: #1E3A5F;
+}
+
+.required-3{
+    color:#1E3A5F;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+/* LINES */
+.customer-line,
+.customer-line2,
+.customer-dec{
+    width: 100%;
+    height: 1px;
+}
+
+.customer-line,
+.customer-line2{
+    background-color: #C89B3C;
+}
+
+.customer-dec{
+    background-color: #7C8187;
+}
+
+/* FLEX ROWS */
+.customer-box1,
+.customer-box2,
+.customer-box3{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+/* LABEL */
+.name-here{
+    color: #1E3A5F;
+    font-size: 25px;
+    font-weight: 700;
+    padding:5px;
+}
+
+/* INPUT */
+.input-name{
+  position: relative;
+}
+
+input{
+    width: 100%;
+    border-radius: 20px;
+    border: #112240 solid 4px;
+    padding-left: 20px;
+    height: 60px;
+    font-size: 20px;
+}
+
+/* CHECKBOX */
+.customer-check{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    right: 15px;
+    top: 20px;
+}
+
+/* PREFILL */
+.pre-fill{
+    display: flex;
+    padding:5px ;
+}
+
+.pre-fill p{
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.pre-fill h4{
+    font-size: 25px;
+    font-weight: 500;
+}
+
+/* STATUS */
+.lead-status{
+    font-size: 30px;
+    font-weight: 700;
+    color: #1E3A5F;
+}
+
+.status-lead{
+    display: flex;
+    gap: 10px;
+    font-size: 20px;
+    font-weight: 700;
+    color: #2A6070;
+}
+
+.l-new, .l-contacts, .l-nego, .l-closed, .l-lost, .l-interest{
+    border: #C89B3C solid 1px;
+    border-radius: 50px;
+    padding: 3px 8px;
+}
+.l-contacts{
+    background-color: #C89B3C;
+}
+
+/* TEXT */
+.selection{
+    font-size: 25px;
+    font-weight: 400;
+    color: #1E3A5F;
+}
+
+.selection2{
+    display: flex;
+    gap: 10px;
+    color: #1E3A5F;
+}
+
+.selection2 h4{
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.selection2 p{
+    font-size: 25px;
+    font-weight: 300;
+}
+
+/* EXPECTED */
+.expected-container{
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    gap: 15px;
+}
+
+.square{
+    position: absolute;
+    left: 0;
+    background-color: #C89B3C;
+    width: 65px;
+    height: 52px;
+    border-radius: 20px 0 0 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* FIX INPUT OVERLAP */
+.expected-container input:first-of-type{
+    padding-left: 80px;
+}
+
+/* NOTES */
+.note-container {
+  width: 100%;
+}
+
+.note-container textarea {
+  width: 100%;
+  height: 150px;
+  border: 2px solid #C89B3C;
+  padding: 10px 50px;
+}
+
+/* BUTTON */
+.save-lead{
+  width: 100%;
+  height: 90px;
+  background-color: #C89B3C;
+  border: none;
+  border-radius: 12px;
+  color: #112240;
+  font-size: 50px;
+  font-weight: 700;
+}
