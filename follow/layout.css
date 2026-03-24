@@ -19,7 +19,6 @@ body {
 }
 
 .container.sidebar-hidden {
-<<<<<<<< HEAD:home-note/layout.css
   grid-template-columns: 0 1fr;  /* collapse sidebar column */
 }
 
@@ -32,7 +31,7 @@ body {
   grid-row: 1 / span 2;   /* sidebar spans both rows */
   grid-column: 1;
   width: 356px;           /* keep its width defined */
-========
+
   grid-template-columns: 0px 1fr;
 }
 
@@ -825,4 +824,4 @@ flex-direction: column;
   margin: 5px 0;
 }
 }
->>>>>>>> followup-home:follow/layout.css
+

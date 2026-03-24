@@ -4,18 +4,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>BizPal</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
-    rel="stylesheet">
+  <title>BizPal - Analytics</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-  <link rel="stylesheet" href="/leadpipe/layout.css">
-  <script src="/js/script.js"></script>
+  <link rel="stylesheet" href="layout.css">
 </head>
 
 <body>
   <div class="container">
     <div class="side-container">
-      <!-- Left Sidebar -->
       <aside class="sidebar1">
         <div class="nickname">
           <div class="icon-wrapper">
@@ -28,7 +25,6 @@
         </div>
       </aside>
 
-      <!-- Left Sidebar -->
       <aside class="sidebar2">
         <nav>
           <ul class="nav-links">
@@ -50,10 +46,10 @@
                 Lead Pipeline
               </a>
             </li>
-              <li>
-              <a href="lead.html">
-                <img class="note-icon" src="Layout icons/notes.svg" alt="Lead Pipeline icon" />
-               Notes
+            <li>
+              <a href="notes.html">
+                <img class="note-icon" src="Layout icons/notes.svg" alt="Notes icon" />
+                Notes
               </a>
             </li>
             <li>
@@ -80,7 +76,6 @@
           </ul>
         </nav>
 
-        <!-- profile picture upload control -->
         <input type="file" id="profile-upload" accept="image/*" hidden />
         <label for="profile-upload" class="profile-button">
           <div class="profile-pic">
@@ -95,26 +90,14 @@
       </aside>
     </div>
 
-    <!-- Top Bar -->
     <header class="topbar">
       <div class="topbar-left">
         <div class="follow-reminder">
-<<<<<<<< HEAD:leadpipe/layout.html
-          <div class="ham">
-        <button class="hamburger" id="hamburger-btn">&#9776;</button>
-        
-========
-        <button class="hamburger" id="hamburger-btn">&#9776;</button>
-        <div class="chidi">
->>>>>>>> followup-home:follow/layout.html
-        <h1>Good morning, Chidi 👋</h1>
-        </div>
-        <p>Here’s what’s happening at your shop today</p>
-<<<<<<<< HEAD:leadpipe/layout.html
-        
-========
-        </div>
->>>>>>>> followup-home:follow/layout.html
+          <button class="hamburger" id="hamburger-btn">&#9776;</button>
+          <div class="chidi">
+            <h1>Good morning, Chidi 👋</h1>
+            <p>Here’s what’s happening at your shop today</p>
+          </div>
         </div>
       </div>
 
@@ -126,42 +109,25 @@
       </div>
     </header>
 
-
-
-    <!-- Main Content -->
     <main class="main">
-
       <div class="Lead-container">
-
         <div class="Lead-Dash total-customers">
           <h1>Total Customers</h1>
           <p>+12 this month</p>
-          <div class="Lead-circle">
-          </div>
+          <div class="Lead-circle"></div>
         </div>
-
-
-
 
         <div class="Lead-Dash active-leads">
           <h1>Active Leads</h1>
           <p>+5 today</p>
-          <div class="Lead-circle">
-          </div>
+          <div class="Lead-circle"></div>
         </div>
-
-
-
 
         <div class="Lead-Dash deals-closed">
           <h1>Deals Closed</h1>
           <p>+15 today</p>
-          <div class="Lead-circle">
-          </div>
+          <div class="Lead-circle"></div>
         </div>
-
-
-
 
         <div class="Lead-Dash conversion">
           <h1>Conversion</h1>
@@ -169,78 +135,42 @@
             <img src="Layout icons/rate.svg" alt="Arrow Up Icon" />
             <p>4% up</p>
           </div>
-          <div class="Lead-circle">
-          </div>
+          <div class="Lead-circle"></div>
         </div>
       </div>
 
       <p class="Quick">Quick Actions</p>
 
       <div class="q-container">
-
-        <div class="q-action1">
-          <h1>+ Add Customer</h1>
-        </div>
-
-        <div class="q-action2">
-          <h1>+ Add Lead</h1>
-        </div>
-
-        <div class="q-action3">
-          <h1>+ Log Note</h1>
-        </div>
-
+        <div class="q-action1"><h1>+ Add Customer</h1></div>
+        <div class="q-action2"><h1>+ Add Lead</h1></div>
+        <div class="q-action3"><h1>+ Log Note</h1></div>
       </div>
 
-
-
-<<<<<<<< HEAD:leadpipe/layout.html
-      <img class="funnel" src="Layout icons/follow icon.png" alt="Dashboard Image" />
-      <div class="Lead-Header">
-      <div class="Lead-Info">
-        <h1>No follow-ups due</h1>
-        <p>Great work! You are all caught up. Notes you save will create</p>
-          <p> reminders automatically.</p>
-========
       <img class="funnel" src="Layout icons/follow.svg" alt="Dashboard Image" />
       <div class="Lead-Header">
-      <div class="Lead-Info">
-        <h1>No follow-ups due</h1>
-        <p>Great work! You are all caught up. Notes you save will create reminders automatically.</p>
-         
->>>>>>>> followup-home:follow/layout.html
+        <div class="Lead-Info">
+          <h1>No follow-ups due</h1>
+          <p>Great work! You are all caught up. Notes you save will create reminders automatically.</p>
+        </div>
       </div>
+    </main>
+  </div>
 
-      </div>
-  </main>
+  <script>
+    const hamburgerBtn = document.getElementById('hamburger-btn');
+    const container = document.querySelector('.container');
 
-</div>
-
-<script>
-const hamburgerBtn = document.getElementById('hamburger-btn');
-<<<<<<<< HEAD:leadpipe/layout.html
-const sideContainer = document.querySelector('.side-container');
-
-hamburgerBtn.addEventListener('click', () => {
-  // Toggle sidebar for ALL screen sizes
-  sideContainer.classList.toggle('hidden');
-});
-========
-const container = document.querySelector('.container');
-
-hamburgerBtn.addEventListener('click', () => {
-  // Check if we are on Desktop (wider than 768px)
-  if (window.innerWidth > 768) {
-    container.classList.toggle('sidebar-hidden');
-  } else {
-    // Mobile: Do nothing. 
-    console.log("Hamburger disabled on mobile.");
-  }
-});
-
-
->>>>>>>> followup-home:follow/layout.html
-</script>
+    hamburgerBtn.addEventListener('click', () => {
+      // Toggle sidebar behavior for desktop
+      if (window.innerWidth > 768) {
+        container.classList.toggle('sidebar-hidden');
+      } else {
+        // You can add mobile-specific toggle logic here if needed
+        console.log("Mobile sidebar logic goes here.");
+      }
+    });
+  </script>
 </body>
 
 </html>
