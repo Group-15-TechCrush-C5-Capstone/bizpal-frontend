@@ -71,8 +71,7 @@ body {
 
 
 .sidebar2 {
-   display: flex;
-   justify-content: flex-start;
+  display: flex;
   padding-left: 0px;
   flex-direction: column;
   grid-row: 2;
@@ -80,7 +79,7 @@ body {
   background-color: #112240;
   color: #BFB7B7;
   width: 356px;
-height:110vh;
+  height: 100%;
   padding-left: 25px;
 }
 
@@ -278,7 +277,7 @@ font-size: 23px;
     padding: 20px;
 }
 
-<<<<<<<< HEAD:leadpipe/layout.css
+
 
 .Lead-container{
 display: flex;
@@ -494,7 +493,6 @@ margin: 0;
   cursor: pointer;
 }
 
-========
 .notes-container{
   display: grid;
   grid-template-columns: 2fr 1fr;
@@ -668,4 +666,4 @@ font-weight: 600;
   border: none;
   border-radius: 8px;
 }
->>>>>>>> notes:notes/layout.css
+

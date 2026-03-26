@@ -4,6 +4,7 @@
   box-sizing: border-box;
 }
 
+
 body {
   font-family: "Poppins", sans-serif;
 }
@@ -77,13 +78,13 @@ body {
 .container {
   display: grid;
   grid-template-columns: 356px 1fr;
-  grid-template-rows: 70px 600px;
+  grid-template-rows: 90px 600px;
 }
 
 .side-container {
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  height: 110vh;
 }
 
 .sidebar1 {
@@ -136,6 +137,7 @@ body {
 }
 
 
+
 .sidebar2 {
    display: flex;
    justify-content: flex-start;
@@ -146,7 +148,7 @@ body {
   background-color: #112240;
   color: #BFB7B7;
   width: 356px;
-  height: 622px;
+height:110vh;
   padding-left: 25px;
 }
 
